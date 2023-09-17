@@ -1,0 +1,483 @@
+<head>
+    <meta charset="utf-8">
+    <title>PhD Programs</title>
+    <link rel="stylesheet" href="#">
+    <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+/*SCHOOL NAVBAR 1*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color:#084ca4;
+    height: 17vh;
+    width: 100%;
+
+
+}
+.nav img{
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.nav h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px gray;
+    margin-top: 40px;
+    margin-left: 310px;
+}
+@media screen and (max-width: 800px) {
+    .nav img{
+        margin-left: 10px;
+        width: 200px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 40px;
+        margin-top: 40px;
+        margin-left: 30px;
+        text-shadow: 5px 5px 10px gray;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav img{
+        margin-left: 10px;
+        width: 150px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 15px;
+        text-shadow: 5px 5px 10px gray;
+    }
+
+}
+
+/*SECOND NAVABR*/
+
+/* Add a black background color to the top navigation */
+.schoolnav2 {
+background-color: #123f79;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.schoolnav2 a {
+float: left;
+display: block;
+color: white;
+font-weight: 500;
+text-align: center;
+padding: 12px 10px;
+text-decoration: none;
+font-size: 16px;
+margin-left: 20px;
+}
+
+/* Change the color of links on hover */
+.schoolnav2 a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Hide the link that should open and close the schoolnav2 on small screens */
+.schoolnav2 .icon {
+display: none;
+}
+@media screen and (max-width: 600px) {
+.schoolnav2 a:not(:first-child) {display: none;}
+.schoolnav2 a.icon {
+  float: right;
+  display: block;
+}
+}
+
+/* The "responsive" class is added to the schoolnav2 with JavaScript when the user clicks on the icon. This class makes the schoolnav2 look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.schoolnav2.responsive {position: relative;}
+.schoolnav2.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.schoolnav2.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+       body{
+           margin:0;
+           padding:0;
+           font-family: sans-serif;
+       }
+       section{
+           padding:0 100px;
+           background:url('Mandir4.jpg');
+           background-repeat:no-repeat;
+            background-size:cover;
+           line-height: 2;
+           height : 1520vh;
+            display: flex;
+            justify-content: center;
+            
+       }
+       
+       @media screen and (max-width: 900px){
+    section{
+        height : 2900vh;
+      
+        background-repeat:repeat;
+      }
+    }
+       @media screen and (max-width: 600px){
+    section{
+        height : 4150vh;
+      
+       background-repeat:repeat;
+      }
+    }
+
+       .box{
+           position:relative;
+           margin-top:5%;
+           margin-bottom:5%;
+           max-width: 100%;
+           padding: 30px;
+           background: rgba(255,255,255,.7) ;
+       }
+       p{
+           font-weight:500;
+       }
+       h1{
+            font-size: 3rem;
+            text-shadow: 4px 4px 6px black;
+        }
+       h4{
+           font-size: 1.5rem;
+       }
+       h3{
+           font-size: 16px;
+       }
+       .course1{
+        margin-left:60px;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="logo.jpg" alt="logo">
+        <h1>HIGHER EDUCATION</h1>
+    </div>
+    <div class="schoolnav2" id="schoolnav2">
+     <a href="HigherEducation.html">HOME </a>
+     <a href="#">DEPARTMENT</a>
+     <a href="http://www.banasthali.org/banasthali/wcms/en/home/examination/index.html" target="blank">EXAMINATION</a>
+     <a href="higherAdmissionForm.html">ADMISSION</a>
+     <a href="HigherFees.html">FEE STRUCTURE</a>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <i class="fa fa-bars"></i>
+     </a>
+   </div>
+    <section>
+      
+        <div class="box">
+            <h1>DOCTOR OF PHILOSOPHY</h1>
+            <p>
+                Subjects in which Research facility is available:
+        <br><br>
+
+                <div class="course1">
+        1.    Computer Science
+
+
+        <br>2.    Pharmacy
+
+
+        <br>3.    Chemistry
+
+
+        <br>4.    Chemical Engineering
+
+
+        <br>5.    Bio-science and  Biotechnology
+
+
+        <br>6.    Electronics
+
+
+        <br>7.  Mathematical Science
+
+
+        <br>8.  Physics
+
+
+        <br>9.  Sanskrit, Philosophy and Vedic Studies
+
+
+        <br>10.  Hindi and Modern Indian Languages
+
+
+        <br>11.  English and Modern European Languages
+
+
+        <br>12.  Economics
+
+        <br>13.  History and Indian Culture
+
+
+        <br>14.  Political Science and Public Administration
+
+
+        <br>15.  Sociology
+
+
+        <br>16.  Physical Education
+
+
+        <br>17.  Performing Arts
+
+
+        <br>18.  Visual Art
+
+
+        <br>19.  Home-science
+
+
+        <br>20.  Education
+
+
+        <br>21.  Commerce and Banking
+
+
+        <br>22.  Management
+
+
+        <br>23.  Design
+
+
+        <br>24.  Legal Studies
+
+
+        <br>25.  Psychology
+
+
+        <br>26.  Journalism and Mass Communication
+
+
+        <br>27.  Earth Sciences
+
+
+        <br>28.  Aviation
+
+
+        <br>29.  Automation<br><br>
+    </div>
+        <br><br>
+ Bye-Laws related to Research Programme for the award of Ph.D Degree
+<br><br>
+<h4>14(HE)
+    <br>
+    C.1. (1)</h4>
+    <div class="course1">
+A Ph.D. Aspirant who has obtained a Master's degree in the subject or related /allied area with at least 55% aggregate marks (or an equivalent CGPA) (50% in case of SC/ST/ Differently-Abled category) or has qualified the National Eligibility Test (NET) conducted by the University Grants commission may apply for Admission to the Ph.D. programme at any time during the academic year for pursuing his/her research work under the guidance of a supervisor approved by the Vidyapith. A candidate who has a minimum 5 years of work experience (Teaching/ Industrial/ Research) may be given relaxation of 5% in the marks by the Vice-Chancellor/Pro Vice-Chancellor for registration to the Ph.D. programme. Every candidate has to appear in the Research Entrance Test (RET) except for the subject of Fine Arts, Visual Art, Music, Dance & Design. Qualifying RET is a mandatory requirement for enrollment and until that stage the admission shall be treated as provisional.
+</div>
+<h3>Note: A Ph.D. Aspirant who has qualified NET, SLET, GATE, GPAT or M.Phil (admitted to M.Phil.  programme through entrance examination) may be exempted from the research entrance test. M.Phil candidates shall also be exempted from course work.
+</h3>
+<br><br>
+<h4>C.1. (2)</h4>
+<div class="course1">
+The following persons may be considered eligible to act as research supervisors of the Vidyapith:
+<br>
+(a)    Any Professor or Associate Professor of the Vidyapith with at least five research publications
+<br>
+(b)   Any Assistant Professor with a Ph.D. degree and at least two research publications may also be recognized as Research Supervisor subject to approval by Research Board.
+<br>
+(c) External members of the Executive Council/Academic Council/Research Board.
+<br>
+(d) Any other person with Ph.D. degree deemed fit by the research board to supervise Ph.D. work of student.
+<br>
+(e) Eminent academicians with at least fifteen years' teaching experience (not below degree classes) and independent research publications equivalent to Ph.D. work may also be recognized as Research Supervisor subject to approval by Research Board.
+</div>
+<br><br>
+<h4>C.1. (3)</h4>
+<div class="course1">
+A candidate may work under joint supervision of two (approved) research supervisors. The supervisors are not necessarily required to belong to the same faculty/subject.
+</div>
+<br><br>
+<h4>C.1.(4)</h4>
+<div class="course1">
+No persons will be allowed to guide his/her close relations. The term ‘close relation' includes wife, husband, son, daughter, grand-son, grand-daughter, brother, sister, nephew, niece, grand-niece, grand-nephew, uncle, aunt, son in law, daughter in law.
+</div>
+<br><br>
+<h4>C.1. (5)</h4>
+<div class="course1">
+A candidate shall be treated as duly enrolled for the Ph.D. programme only after it is verified that he/she meets the eligibility criteria, has qualified RET, and has submitted migration certificate of the University from which he/she completed his/her Master's degree or a professional degree declared equivalent to masters degree. Candidates who have already been enrolled once in the Vidyapith shall be issued the same enrollment number automatically on the submission of the migration certificate.
+</div>
+<br><br>
+<h4>C.1. (6)</h4>
+<div class="course1">
+The RAC shall be constituted by HOD in consultation with the supervisor within a period of one month from the date of admission. The RAC would comprise of HOD, supervisor and two more experts, one each nominated by HOD and the Supervisor. The RAC shall be chaired by the Supervisor. HOD/Supervisor may also recommend to the Vice-Chancellor/Pro Vice-Chancellor for the appointment of external expert (s) in case desired expertise is not available within the University.
+</div>
+<br><br>
+<h4>C.1. (7)</h4>
+<div class="course1">
+After admission a research scholar will be required to prepare a Synopsis ordinarily not exceeding 20 A4 size pages (with 12 font size and 1.5 line spacing). Synopsis of the proposed research work should generally be submitted not earlier than 6 months of admission and in any case not later than 12 months. Generally, the synopsis should include national and international status related to the proposed work, clear objectives of the research work, methodology and plan of the work along with expected research output and other deliverables, if any. The synopsis should also include a list of relevant references. The candidate may also be required to give a presentation of his/her synopsis before RAC members, which shall be open to all. Based on evaluation of synopsis by RAC and its presentation, RAC will submit its recommendations to the Vice-Chancellor/Pro Vice-Chancellor. The academic office shall check the synopsis for plagiarism and language. The RAC may also recommend course work required to be undertaken by the Ph.D. candidate. Ph.D. candidate already holding M. Phil. degree may be exempted by the RAC from the Ph.D. course work. The Ph.D. Course work shall be a minimum of eight credits.
+</div>
+<br><br>
+<h4>C.1. (8)</h4>
+<div class="course1">
+The synopsis submitted by the candidate, after favorable recommendations of the RAC, shall be referred to three external experts nominated by the Vice-Chancellor. The research supervisor shall suggest a panel of 5 to 8 examiners. The Vice-Chancellor may also appoint experts outside the panel submitted by the Supervisor.
+<br>
+The examiners shall send their reports on the synopsis normally within two months. If two examiners recommend that the synopsis is suitable for PhD work, the synopsis shall be approved. In the event, one expert rejects the synopsis, the Vice-Chancellor may appoint a third expert for the evaluation of the synopsis. In case, the third examiner also rejects the synopsis or both the examiners initially appointed reject, then the synopsis will have to be resubmitted through the RAC within a maximum period of six months.
+</div>
+<br><br>
+<h4>C.1. (9)</h4>
+<div class="course1">
+Recommendations of RAC as well as the opinion of the external experts on the Synopsis shall be placed before the Vice-Chancellor. The Vice-Chancellor, after satisfying herself/ himself that the subject is suitable for research to be pursued and that the candidate possesses the requisite qualifications, will pass necessary orders for the registration of the candidate as Ph.D. scholar. The orders of the Vice-Chancellor will be reported to the Research Board.
+</div>
+<br><br>
+<h4>C.1. (10)</h4>
+<div class="course1">
+A candidate may initiate his/her research work after admission, however, his/her registration shall be processed only after his/her synopsis has been duly approved and the Vice-Chancellor has passed the order for his/her registration. The date of commencement of research work of an admitted student shall be the date of submission of his/her application.  
+</div>
+<br><br>
+<h4>C.1. (11)</h4>
+<div class="course1">
+Every research scholar shall submit a progress report of the research work once every year through his/her research supervisor.
+</div>
+<br><br>
+<h4>C.1. (12)</h4>  
+<div class="course1">
+Educational fee and all other fees, as may be prescribed from time to time shall be paid in the beginning of the academic session in the month of July and at stipulated time, respectively. In case one fails to deposit the dues within 6 months of the due date, his/ her admission is liable to be cancelled. The fee will be charged from the date of admission, and it shall be paid till the candidate submits his/her thesis to the Vidyapith. The candidate will be required to clear all due by the time of Synopsis and thesis submission, failing which synopsis/thesis will not be processed further until all dues are cleared by the candidate
+</div>
+<br><br>
+<h4>C.1. (13)</h4>
+<div class="course1">
+A candidate ordinarily shall not be permitted to change his/her research topic, however in rare cases, the Vice-Chancellor may on the recommendation of the RAC permit the change in the research topic.
+</div>
+<br><br>
+<h4>C.1 (14)</h4>
+<div class="course1">
+    (a)    Ph.D. programme shall be for a minimum duration of three years, including course work and a maximum of six years.
+<br>
+(b)   If a candidate is unable to submit his/her thesis at the end of six years, he or she shall seek the permission of the Vice-Chancellor for the extension of time, as may be necessary, subject to a maximum of three years. Registration of the candidate shall be automatically cancelled if he/she has neither submitted the thesis nor has applied for extension.
+<br>
+(c)    The women candidates and Persons with Disability (more than 40% disability) may be allowed a relaxation of two years in the maximum duration. In addition, the women candidates may be provided Maternity Leave/Child Care Leave once in the entire duration of Ph.D. for up to 240 days.
+
+</div>
+<br><br>
+<h4>C.1. (15)</h4>
+<div class="course">
+If a candidate fails to submit her/ his thesis after availing the maximum possible extension in the time, he/she may be allowed for fresh registration on the same topic on the recommendation of the Supervisor and approval by the Vice Chancellor on the payment of applicable fee, provided an application for fresh registration is made within six months from the date of completion of the extension period, failing which the registration will finally stand cancelled.
+</div>
+<br><br>
+<h4>C.1. (16)</h4>
+<div class="course1">
+Normally no candidate registered for the PhD degree shall be allowed to take up any other examination. However, in exceptional cases in the interest of research, the Vice-Chancellor may grant such permission on the recommendation of the RAC.
+</div>
+<br><br>
+<h4>C.1. (17)</h4>
+<div class="course1">
+A Ph.D. thesis for submission shall be duly processed and recommended by the RAC. A candidate will be expected is required to publish at least one research paper in refereed journal and make two paper presentations in conferences/ seminars/performance/exhibition before the submission of the thesis. Alternatively, a candidate may publish a minimum of two research papers in refereed journal of repute. Along with the RAC report, evidence for the publications and or presentations in the form of presentation certificates and/or reprints be suitably provided. 
+</div>
+<br><br>
+<h4>C.1. (18)</h4>
+<div class="course1">
+A candidate may incorporate in his/her thesis contents of any of his/her own published papers based on work done by him/herself during the course of PhD, provided that they have not been already used for obtaining a degree of the Vidyapith or of any other University and he/she shall state this in unambiguous terms in the relevant parts of the thesis.
+</div>
+<br><br>
+<h4>C.1. (19)</h4>
+<div class="course1">
+    A candidate will ordinarily submit his/her thesis within six months of the recommendation by the RAC
+</div>
+<br><br>
+<h4>C.1. (20)</h4>
+<div class="course1">
+    'No dues' certificate duly signed by the Head of the Department concerned, Librarian of the Vidyapith, Accounts Section and the Hostel Warden concerned, shall be submitted along with the thesis. The academic office shall check the thesis for plagiarism and language.
+
+</div>
+<br><br>
+<h4>C.1. (21)</h4>
+<div class="course1">
+    The candidate shall supply six printed or type-written copies of the thesis printed preferably  both sided in case of one supervisor and seven copies in case of two supervisors, together with the prescribed supplication fee. The language used in the thesis shall be English or Hindi unless otherwise specifically permitted by the RAC otherwise. The thesis shall comply with the following conditions:                      
+<br>
+(i)    It must be a piece of research work characterized either by the discovery of new facts or by a fresh approach towards interpretation of facts or theories. In either case, it should prove the candidate's capacity for the critical examination, sound judgment and clarity of expression. The candidate shall indicate how far the thesis embodies the result of his/her investigations and in what respect it appears to advance the study of the subject.
+<br>
+(ii)   A critical edition or translation of work, approved specially for the purpose by the Research Board at the time of registration, when accompanied by an adequate introduction and commentary of the scholarly nature, may also be considered for the award of a Ph.D. degree provided that the other requirements are fulfilled.
+<br>
+(iii)  A certificate shall be furnished by the supervisor indicating how far the reported research work is the original work of the candidate.
+
+</div>
+<br><br>
+<h4>C.1. (22) </h4>      
+<div class="course1">The thesis shall be referred for the evaluation to the supervisor (s) and three external examiners. The panel of examiners submitted by the supervisor will have eight names giving details regarding designation, postal address, telephone numbers and field of specializations. The Vice-Chancellor shall appoint examiners out of this panel. However, the Vice-Chancellor may also appoint examiners from outside the panel suggested by the supervisor.
+</div>
+<br><br>
+<h4>C.1. (23)</h4>
+<div class="course1">
+    (a)   The examiners including supervisor (s) shall send their reports on the thesis normally within three months. If all the examiners recommend that the thesis is suitable for the award of PhD degree, a viva-voce examination (to be conducted by two examiners including the supervisor) shall be conducted. If due to any reason the supervisor is not available the Vice-Chancellor may appoint his nominee to conduct the viva-voce examination.
+<br>
+(b)   If the appointed external examiner is not available for the viva-voce, another person may be appointed by the Vice-Chancellor.
+<br>
+(c)   The examiners shall send their reports independently to the Vice-Chancellor by name marked ‘Confidential'.
+<br>
+(d)   If in the first instance, all the examiners evaluating the thesis as well as those conducting the viva-voce examination recommend for the award of the degree to the candidate, the degree shall be awarded. If the candidate fails to satisfy the viva-voce examiners or if there be a difference between the viva-voce examiners, the candidate may be allowed, on the payment of prescribed fee, to appear at a second viva-voce examination to be held not later than one year from the date of first viva-voce. If at the second viva-voce the candidate fails to satisfy the examiners, his/her thesis shall be finally rejected.
+<br>
+(e)   If the majority of the referees recommend rejection of the thesis, the thesis shall be rejected.
+<br>
+(f)   In case of divergence of opinion among the three referees, the report of each referee will be sent to another two, with a view to obtain agreement among them. If even after exchange of reports, the case is not decidable, the following procedure shall be followed:
+<br>
+If two examiners have accepted the thesis while the third has asked for its revision, the Vice-Chancellor, on the recommendation of the supervisor, shall either allow the candidate to revise the thesis or appoint a fourth examiner. If a fourth examiner is appointed, his opinion shall be final. If one of the three examiners has accepted the thesis, another has rejected it, while the third has asked for its revision, the thesis shall be rejected. When the thesis is rejected under such circumstances, the candidate can get himself/herself registered afresh on the same subject.
+
+    </div>
+ <br><br>
+<h4>C.1 (24)</h4>
+<div class="course1">
+    If a candidate is permitted to improve and resubmit his/her thesis, he/she shall be required to submit it not later than twelve months from the date of such permission.
+<br>
+The thesis so resubmitted shall be sent to the same panel of examiners, who evaluated the original one, for adjudicate. The Vice-Chancellor shall, in contingency, appoint another external examiner or examiners, as the case may be, from the original panel suggested by the supervisor. The revised thesis shall be accepted if at least three examiners recommend acceptance. Candidate shall not be allowed to resubmit his/her thesis more than once.
+
+</div>
+<br><br>
+<h4>C.1.(25)</h4>
+<div class="course1">
+(a) The reports of the supervisor (s) and the external examiners (including those of the viva-voce test) shall be placed before the Vice-Chancellor for approval. After approval of the Vice-Chancellor, the degree be awarded to the candidate at the next convocation of the Vidyapith.
+<br>
+(b) The Vidyapith shall submit an electronic copy of the Ph. D. thesis to the relevant public domain weblink before the announcement of the award of the Ph.D. degree.
+<br>
+(c) The Vidyapith shall issue a provisional certificate on the submission of the application and prescribed fee by the candidate and a certificate to the effect that the Degree has been awarded in accordance with the provisions of the UGC Regulations, 2016.
+<br>
+(d) The date of award of PhD degree shall be the date of notification by Vice Chancellor.
+</div>
+<br><br>
+<h4>C.1.(26)</h4>
+<div class="course1">
+    Notwithstanding anything contained in the above Bye-laws, if any work relating to the edited texts or calendars of unpublished manuscripts, records or documents, duly accompanied by an adequate introduction and critical appreciation of an outstanding nature, is submitted to the Vidyapith by the aspirant and the experts to whom it is referred for the opinion find it suitable for the purpose, the same may be considered on its own merits for the award of the PhD degree of the Vidyapith.
+
+</div>
+<h4>C.1.(27)</h4>
+<div class="course1">
+    In case of relocation of Ph.D. woman scholar due to marriage or otherwise, the research data shall be allowed to be transferred to the Vidyapith provided all the other conditions laid down in Vidyapith by-laws are followed and the research work does not pertain to the project secured by the parent institution/ supervisor from any funding agency. The scholar will however give due credit to the parent supervisor and the institution for the part of research already done.
+
+</div>
+
+<br><br><br>
+<h3>Eligibility</h3>
+<div class="course1">
+    A candidate who has obtained a Master’s degree in the subject or related field with at least 55% marks in aggregate or has qualified the National Eligibility Test (NET) conducted by the University Grants Commission may apply for Admission for the Ph.D.  degree at any time during the academic year for pursuing his/her research work under the guidance of a supervisor approved by the Vidyapith. Every applicant is expected to attach Master's degree marks sheet along with application. Every candidate will appear in the Research Entrance Test (RET) which may also be conducted online. Qualifying RET is a mandatory requirement for enrollment, and until that stage the  admission shall be treated as Provisional.
+
+</div>
+<h3>Note : A candidate who has a minimum 5 years work experience (Teaching/Industrial/Research) may be given relaxation of 5% by the Vice-Chancellor for registration for Ph.D. Programme.
+</h3>
+            </p>
+        </div>
+    </section>
+</body>

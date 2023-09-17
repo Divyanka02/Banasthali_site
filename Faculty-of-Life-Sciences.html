@@ -1,0 +1,207 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Life-Sciences</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Life-Sciences.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Life-Sciences.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Life-Sciences.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Life-Sciences.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Life-Sciences.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Life Sciences</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1LS.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2LS.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3LS.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>A pioneering institute sets new goals and pursues them relentlessly, challenges its members to achieve excellence and help them to meet those challenges. This is what Banasthali University strove to do during the past seven decades and continues to do so. <br><br>
+			
+			Amidst the ambience of Indian ethics, value based education is the hallmark of this institution. In the faculty of life science, the meritorious students from across the nation get selected through open entrance tests/ merit to various academic programmes. Sound grasp of fundamentals, good analytical skills, awareness of contemperory problems, reasoning abilities and exposure to the rapidly changing technologies are an integral part of the training at this faculty. <br><br>
+			
+			Our teaching programmes are designed to expose the students to recent exciting developments in the area so that the students are well equipped for employment in biotechnological, agriculture, pharmaceutical and other industries as well as R & D organizations and teaching institutions.      
+			</p><h2>
+		</div>
+		<div class="transbox2">
+			<center><p><h2>Department of BioScience & BioTechnology</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="bio.png" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">Biotechnology is a multi-disciplinary course and various programmes have been developed to meet the growing demand for trained manpower to carry out meaningful biotechnology activity in the country. In the last decade, Banasthali University has emerged as a leading center for education and research in biotechnology and allied disciplines. The programmes are designed to expose the students to recent exciting developments in the area of Biotechnology/ Bioscience/ Microbiology/ Bioinformatics and their application in industry, agriculture and medicine.
+
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox3">
+			<center><p><h2>Department of Chemistry</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">
+						M.Sc. programme in Chemistry was started when the Department of Chemistry was established in 1970. Eversince its inception the Department has earned a good reputation of being an important centre of imparting the quality education in teaching and research. In addition to offering PG and Ph.D. programmes in Chemistry. The Department also offers the UG programme (B.Sc.). Its PG programmes are of two years duration, comprising of four semesters course work. <br><br>
+
+						The Department offers Ph.D. programme in Chemistry. More than sixty students have been pursuing research work in thrust area programmes in these disciplines and on other related subjects. The Department has eleven members in its teaching faculty, a good number of them are very senior members who have been serving the Department for more than thirty years. Their unstinted efforts in career building of the students inspire them to reach to the newer heights of excellence in their academic pursuits.<br><br>
+
+						Our postgraduate programme in chemistry has been designed to develop skilled manpower in the field of these disciplines. The high caliber of education which it imparts, prepares the students, on one hand to meet the requirement of the global demand of the trained manpower in research / industries and on the other hand equips them to excel as a new generation professionals to face the challenges of the twenty first century.   
+					</th>
+					<th><img src="chemistry.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox4">
+			<center><p><h2>Department of Pharmacy</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="pharmacy.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">
+						Ever since, Vidyapith envisaged starting courses in Pharmacy, the aim has been to specifically design the course to develop manpower, which meets the global requirement of skilled professionals in the rapidly growing need of pharmaceutical industries.<br><br>
+
+						Department places sufficient emphasis on putting theoretical concepts into practice by assigning industrially relevant problems and the same is clearly reflected in the curricula of the Pharmacy courses.<br><br>
+
+						Bachelor and Masters programme in Pharmacy has been established with a view to promote excellence in pharmaceutical education and to prepare young women to meet the challenges in the area of pharmaceutical industries, education, research, development and marketing.<br><br>
+
+						In addition to this the department offers Ph.D. programme in Pharmacy. Department has undying passion for research and most of the faculty members are engaged in research activities which includes synthesis, identification and optimization of lead compounds, development of biological assay methods and formulation development of drugs for better pharmacokinetics and dynamics. Drug Discovery Research Lab of the Department is an over busy facility equipped with ultra modern software like Discovery Studio, TSAR, SYSTAT, Chemdraw Ultra and modern equipments for pharmacological evaluation.<br><br>
+
+						The Department has highly qualified faculty members specialized in different areas of pharmaceutical sciences; their unstinted efforts in career building of the students inspire them to reach to the newer heights of excellence in their academic pursuits.<br><br>
+
+						In only few years the Department has established itself as a leading centre for Pharmaceutical Sciences education and have found a respectful place in the community of university institutions imparting Pharmacy education in India.
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox5">
+			<center><p><h2>Department of Chemical Engineering</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">
+						The Chemical Engineering Department is one of the premier engineering departments of Banasthali University. It has a dynamic and goal oriented group of faculty well supported by experienced technical staff. The Department offers instructions at undergraduate level leading to a 4 year B.Tech degree. The instruction at the undergraduate level aims at providing the students a broad-based education with emphasis on theory and practice of Chemical Engineering, keeping in views the current and future requirements of the country. Students are encouraged to identify industrial problems. In-plant training in industrial organizations is a part of the regular undergraduate curriculum. In addition to the infrastructural facilities, pilot plant sized equipment as well as advanced instruments are available. These serve the multiple purposes of training the undergraduate students as well as carrying out research work for final application to solve industrial problems.<br><br>
+
+						The department is also planning to propose a postgraduate level M.Tech program in Chemical Engineering. In which students will be trained to assume independent responsibilities laying emphasis again on the country’s current and future requirements in industry, R&D organizations, design firms and academic institutions.  The Department is well equipped for carrying out basic and applied research leading to the degrees of M.Tech.<br><br>
+						
+						Scope and job prospects<br>
+
+						Chemical engineers are expected to have employment growth of more than 8 percent over the projections decade, about as fast as the average for all occupations. The most employment growth for chemical engineers will be in service-providing industries such as professional, scientific, and technical services, particularly for research in energy and the developing fields of biotechnology, nanotechnology and environmental awareness.
+					</th>
+					<th><img src="chemeng.png" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+	</body>
+	
+</html>

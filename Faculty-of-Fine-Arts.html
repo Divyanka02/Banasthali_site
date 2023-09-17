@@ -1,0 +1,275 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Fine-Arts</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Fine-Arts.css">
+		<link rel="stylesheet" href="Image-Slider-Education.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		div.transbox2 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox2 p {
+			margin: 5% 5%;
+		}
+		div .transbox2 img{
+			display: yes;
+			
+		}
+		div.transbox3 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox3 p {
+			margin: 5% 5%;
+		}
+		div .transbox3 img{
+			display: yes;
+			
+		}
+		div.transbox4 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox4 p {
+			margin: 5% 5%;
+		}
+		div .transbox4 img{
+			display: yes;
+			
+		}
+		div.transbox5 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox5 p {
+			margin: 5% 5%;
+		}
+		div .transbox5 img{
+			display: yes;
+			
+		}
+		
+		div.transbox6 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox6 p {
+			margin: 5% 5%;
+		}
+		div .transbox6 img{
+			display: yes;
+			
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Fine-Arts.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Fine-Arts.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Fine-Arts.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Fine Arts\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Fine-Arts.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Fine Arts</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1F.png" style="width:100%">
+  <div class="text">Images are only for representation</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2F.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<!--<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\3.png" style="width:100%">
+  <div class="text">Lab images are only for representation</div>
+</div>-->
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>
+			The faculty comprises of Music & Dance and Visual Arts.  Each of these departments offers Bachelor's and Master's programmes:</p>
+			<p><ul type = "disc" style="margin-left:120px;margin-top:-50px;font-style: none">
+				<li>- M.A. (Drawing & Painting)</li>
+				<li>- M.Phil. (Drawing & Painting)</li>
+				<li>- Dance</li>
+				<li>- M.A. Music (Vocal/ Instrumental)</li>
+				<li>- M.Phil. (Indian Music)</li>
+				<li>- Research</li>
+			</ul></p>
+			<p style="margin-top:-50px">
+			The uniqueness of Panchmukhi Shiksha Programme of Banasthali University is refeected in the inclusion of the aesthetic dimension in its mission statement.        
+			</p></h2>
+		</div>
+		<div class="transbox2">
+			<center><p><h2>Department of Performing Arts</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="Ghoonghroo.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">Established in 1943, The department of Music has been one of the oldest departments of Banasthali . It has the honor of having great personalities as its architects such as Raja Bhiya Poonchwale, S.C.E.R. Bhatt, Pt. Vinayak Rao Patwardhan and Narayan Rao Vyas. The department was the first to start M.A. Music (Vocal and Instrumental) under the headship of Prof. B.R. Deodhar and later the personalities like P.N. Chichore and N.V. Patwardhan have headed the department.<br>
+					<br>
+					
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox3">
+			<center><p><h2>Department of Design</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">Textile Designing was first introduced as a subject in Bachelor's programme of Banasthali University. Thereafter a Post Graduate diploma was started. Increasing demand and popularity of the subject led the Vidyapith to start the postgraduate programme M.A. (Textile Designing) in the year 2005.<br>
+					<br>
+					
+					</th>
+					<th><img src="Design.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox4">
+			<center><p><h2>Department of Visual Arts</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="Visual.png" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">“Art is a unique mode of expressing a cultured way of life. The experience of joy related to the visible or invisible physical or astral body or sentiments being in real form, appear before human beings in expressive forms. That expression is termed art.”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prof. Aditya Shastri<br>
+					<br>
+					
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox5">
+			<center><p><h2>Department of Journalism and Mass Communication</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">Banasthali Vidyapith has been serving the democratic society for many decades by producing women icons in politics, administration and legislature. Media is the fourth pillar of the democracy and the Vidyapith intend to strengthen the pillar by creating women professionals with ethical values who could lead the existing and emerging media society.<br>
+					<br>
+					
+					</th>
+					<th><img src="jmass.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox6">
+			<center><p><h2>Department of Visual Arts</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="model.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">“The School of Architecture also offers a wide range of elective courses in the field of applied and fine arts, technology, project management, structural systems, green buildings & rating systems, the latest software used in the Architecture & Planning field, sustainability, conservation, advance construction techniques, etc, in keeping with the need of the hour.<br>
+					<br>
+					
+					</th>
+				</tr>
+			</table></p>
+		</div>
+	</body>
+	
+</html>

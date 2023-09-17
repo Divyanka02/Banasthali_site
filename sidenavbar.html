@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side navbar</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+ 
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  /*body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }*/
+  .sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 78px;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    padding: 20px 30px;
+    z-index: 99;
+    transition: all 0.5s ease;
+
+  }
+  .sidebar .open{
+    width: 260px;
+  }
+  .sidebar .logocontent .logo{
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar .active{
+      opacity: 1;
+      
+
+  }
+  .sidebar .logocontent #btn{
+    position: absolute;
+    color: #000;
+    left: 230px;
+    top: 21px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    
+  }
+  .sidebar ul{
+    margin-top: 30px;
+  }
+  .sidebar ul li{
+   
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: 5px;
+    list-style: none;
+
+  }
+  .sidebar ul li .tooltips{
+    position: absolute;
+    left:120px;
+    top:0;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background-color: aliceblue;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar ul li:hover .tooltips{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    top: 50%;
+    
+  }
+  .sidebar ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s ease;
+    border-radius: 10px;
+  }
+  .sidebar ul li a:hover{
+    background-color: rgb(210, 233, 233);
+  }
+  .sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+  }
+  
+  .content{
+    position: absolute;
+    height: 100vh;
+    width: calc(100%-260px);
+    left: 260px;
+    top: 0;
+  }
+  @media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+</style>
+<body>
+    <div class="sidebar">
+      <div class="logocontent">
+        <div class="logo">
+          <i class='bx bxs-lemon'></i>
+          <div class="logo_name">Divyanka Jaiswal</div>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <ul class="nav_list">
+          <li><a href=""><i class='bx bxs-grid-alt'></i><span class="link">Dashboard</span></a><span class="tooltips">Dashboard</span></li>
+          <li><a href=""><i class='bx bx-train' ></i><span class="link">Train</span></a><span class="tooltips">Train</span></li>
+          <li><a href=""><i class='bx bx-water' ></i><span class="link">Sea</span></a><span class="tooltips">Sea</span></li>
+          <li><a href=""><i class='bx bx-car' ></i><span class="link">Road</span></a><span class="tooltips">Road</span></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="text"> HELLO</div>
+       
+    </div>
+    <script>
+     
+      let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+ 
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+
+    </script>
+</body>
+</html>

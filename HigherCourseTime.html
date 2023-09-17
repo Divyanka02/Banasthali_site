@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Time</title>
+    <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+/*SCHOOL NAVBAR 1*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color:#084ca4;
+    height: 17vh;
+    width: 100%;
+
+
+}
+.nav img{
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.nav h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px gray;
+    margin-top: 40px;
+    margin-left: 310px;
+}
+@media screen and (max-width: 800px) {
+    .nav img{
+        margin-left: 10px;
+        width: 200px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 40px;
+        margin-top: 40px;
+        margin-left: 30px;
+        text-shadow: 5px 5px 10px gray;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav img{
+        margin-left: 10px;
+        width: 150px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 15px;
+        text-shadow: 5px 5px 10px gray;
+    }
+
+}
+
+/*SECOND NAVABR*/
+
+/* Add a black background color to the top navigation */
+.schoolnav2 {
+background-color: #123f79;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.schoolnav2 a {
+float: left;
+display: block;
+color: white;
+font-weight: 500;
+text-align: center;
+padding: 12px 10px;
+text-decoration: none;
+font-size: 16px;
+margin-left: 20px;
+}
+
+/* Change the color of links on hover */
+.schoolnav2 a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Hide the link that should open and close the schoolnav2 on small screens */
+.schoolnav2 .icon {
+display: none;
+}
+@media screen and (max-width: 600px) {
+.schoolnav2 a:not(:first-child) {display: none;}
+.schoolnav2 a.icon {
+  float: right;
+  display: block;
+}
+}
+
+/* The "responsive" class is added to the schoolnav2 with JavaScript when the user clicks on the icon. This class makes the schoolnav2 look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.schoolnav2.responsive {position: relative;}
+.schoolnav2.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.schoolnav2.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+        h1{
+            text-shadow: 3px 3px 5px gray;
+        }
+        .FullContent{
+            background-color: rgb(9, 9, 58);
+            color:white;
+            height:650vh;
+            font-size:20px;
+            
+        }
+        @media screen and (max-width: 900px){
+        .FullContent{
+       height:830vh;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .FullContent{
+      height:620vh;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .hide{
+           display:none;
+      }
+    }
+        .FullContent h1{
+            text-align: center;
+        }
+        .innerContent{
+            margin-top:30px;
+            margin-left:14%;
+            width:70%;
+            font-size:20px;
+        }
+        @media screen and (max-width: 900px){
+        .innerContent{
+       margin-left:0;
+       width:100%;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .innerContent{
+       width:90%;
+       margin-left:5%;
+      }
+    }
+        table{
+            align-items: center;
+            background-color:rgb(2, 57, 175);
+        }
+        th{
+            background-color:rgb(154, 180, 236);
+            color:rgb(9, 9, 58);
+        }
+        .para{
+            font-size:20px;
+            margin:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <img src="logo.jpg" alt="logo">
+    <h1>HIGHER EDUCATION</h1>
+</div>
+    <div class="schoolnav2" id="schoolnav2">
+     <a href="HigherEducation.html">HOME </a>
+     <a href="#">DEPARTMENT</a>
+     <a href="http://www.banasthali.org/banasthali/wcms/en/home/examination/index.html" target="blank">EXAMINATION</a>
+     <a href="higherAdmissionForm.html">ADMISSION</a>
+     <a href="HigherFees.html">FEE STRUCTURE</a>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <i class="fa fa-bars"></i>
+     </a>
+   </div>
+   
+  <div class="FullContent"> 
+      <h1>COURSES
+          <br>&<br>
+          DURATION
+      </h1>
+<div class="innerContent">
+<table border="5" text-align="left">
+<tr>
+    <th>Course</th>
+
+<th class="hide">Eligibility</th>
+
+<th>Duration</th>
+</tr>
+
+<tr>
+    <th colspan="3">
+        Humanities & Social Sciences
+    </th>
+</tr>
+<tr>
+    
+    <td>B.A.</td>
+
+    <td class="hide">10+2</td>
+
+    <td>3 yrs.</td>
+
+</tr>
+
+<tr>
+
+    <td>M.A. (Economics, History, Sociology, Political Science, Geography, Psychology, Hindi, English & Sanskrit)
+    </td>
+
+    <td class="hide">B.A.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>Master of Social Work</td>
+
+    <td class="hide"> B.A.</td>
+
+    <td> 2 yrs.</td>
+</tr>
+<tr>
+    <th colspan="3">Education</th>
+</tr>
+
+
+<tr>
+    <td>B.A. B.Ed. *</td>
+
+    <td class="hide">50% in 10+2 with Arts</td>
+    
+    <td>    4 Yrs.</td>
+</tr>
+
+<tr>
+    <td>B.Ed.(B.Sc.) *  </td>
+    
+    <td class="hide">50% in 10+2 with Science</td>
+    
+    <td>    4 Yrs.</td>
+</tr>
+
+<tr>
+    <td>B.Ed.</td>
+    
+    <td class="hide">50% in Graduation (55% in case of Engineering or Technology)
+        (45% for SC/ST candidates)</td>
+        
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Ed.</td>
+    
+    <td class="hide">50% in B.Ed./ B.T./ L.T.
+        (45% for SC/ST candidates)</td>
+        
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Life Sciences</th>
+</tr>
+
+<tr>
+    <td>B.Sc. (Bio Science)</td>
+
+    <td class="hide">55% in 10+2 with Science.</td>
+        
+    <td>3 yrs.</td>
+</tr>
+
+
+<tr>
+    <td>B.Sc. (Bio Science)</td>
+
+    <td class="hide">55% in 10+2 with Science. (Biology)</td>
+        
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>B.Sc. (Biotechnology)</td>
+
+    <td class="hide">55% in 10+2 with Science. (Biology)</td>
+        
+    <td>3 yrs.</td>
+</tr>
+
+
+<tr>
+    <td>B. Pharm.*</td>
+    
+    <td class="hide">60% in 10+2 with Physics, Chemistry, Biology/ Maths</td>
+    
+    <td>4 yrs</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Chemistry)</td>
+
+    <td class="hide"> 55% in B.Sc. with Chemistry</td>
+        
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Botany)</td>
+
+    <td class="hide">B.Sc. (Pass) with Botany as
+        one of the subjects / B.Sc. (Hons.) in
+        Botany; minimum 55% aggregate marks.</td>
+
+    <td> 2 yrs.</td>
+</tr>
+
+
+<tr>
+    <td>M.Sc. (Zoology) B.Sc. (Pass) with Zoology as
+        one of the subjects / B.Sc. (Hons.) in
+        Zoology; minimum 55% aggregate marks.   2 yrs.
+        M.Sc. (Biotechnology) </td>
+
+    <td class="hide">55% in Bachelor's degree in various life sc. disciplines</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Applied Micro Biology & Biotechnology)</td>
+
+    <td class="hide"> B.Sc. with Bioscience/ Biotechnology</td>
+        
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td> M.Sc. (Bio-Informatics)</td>
+
+    <td class="hide">B.Sc. (Biotech/ Life Science)</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Pharm. (Pharmaceutical Chemistry, Pharmaceutics, Pharmacology)</td>
+        
+    <td class="hide"> 60% in Bachelor's degree in Pharmacy (B.Pharm.)</td>
+
+    <td> 2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Tech. (Biotechnology)</td>
+
+    <td class="hide">   B.E./B.Tech.(Biotechnology), Biochemical Engineering, B.Pharmacy and related disciplines or M.Sc. (Life Sciences) and related disciplines</td>
+
+    <td> 2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Tech. (Chemical Engineering)</td>
+    
+    <td class="hide">B.E./B.Tech. (Chemical Engineering/Biotechnology/Biochemical Engineering/Environmental Engineering) in examination of any statuary recognized university with at least 55% aggregate marks or equivalent grade    </td>
+
+    <td> 2 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Earth Sciences</th>
+</tr>
+
+<tr>
+    <td>B.Sc. Geology</td>
+
+    <td class="hide">55% in 10+2 with Sc.</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Geology)</td>
+
+    <td class="hide">50% in B.Sc.(Geology)</td>
+
+    <td>2 yrs.</td>
+</tr>
+    
+<tr>
+    <td>M.Sc. (Geography)</td>
+
+    <td class="hide">B.A. / B.Sc.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Environmental Science)</td>
+
+    <td class="hide">50% in B.Sc./ B.E./ B.Tech.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Tech. (Remote Sensing)</td>
+
+    <td class="hide">B.E./ B.Tech./ B.Arch. or Masters Degree in Remote Sensing & any Discipline of Science/Earth Science</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Physical Sciences</th>
+</tr>
+
+
+<tr>
+    <td>M.Sc. (Physics) </td>
+
+    <td class="hide">55% in B.Sc. with Maths &  Physics</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Electronics) </td>
+
+    <td class="hide">55% in B.Sc. with Maths & Elect./ Physics/ Comp. Maint.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Tech. (Nanotechnology)</td>
+
+    <td class="hide">55% in M.Sc.(Physics/ Chemistry)/ B.Tech. (Electronics/ Electrical Engineering/ Biotechnology/ Chemical Engineering) from a recognized university.</td>
+
+    <td>2 yrs.</td>
+</tr>
+        
+<tr>
+    <td>M.Tech. (VLSI Design)</td>
+
+    <td class="hide">B.E./ B.Tech.(C.S./ Elec.)/ M.Sc
+        (C.S.)/ MCA/ M.Sc. (Elect.)   with a minimum of 55%
+        aggregate marks.</td>
+
+    <td>2 yrs.</td>
+</tr>
+    
+<tr>
+    <th colspan="3">Fine Arts</th>
+</tr>
+
+<tr>
+    <td>B. Design</td>
+
+    <td class="hide">50% in 10+2</td>
+
+    <td>4 yrs.</td>
+</tr>
+
+<tr>
+    <td>B. Arch.</td>
+
+    <td class="hide">50% in aggregate in 10+2/ Senior Secondary School certificate examination with Science Mathematics. Additionally, the student will have to meet the minimum qualifying marks in National Aptitude Test in Architecture (NATA) examination (valid NATA score) as prescribed by the Council of Architecture for the corresponding year.</td>
+
+    <td>5 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Design</td>
+
+    <td class="hide">4 Year B.Des./B.Tech. Programme or any graduate with 1 year work experience with 50% marks in qualifying examination </td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.A. (Music-Vocal/Instrumental, Drawing & Painting)</td>
+
+    <td class="hide">Bachelor's degree from Banasthali Vidyapith or recognized by Banasthali Vidyapith as equivalent.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.A. (Kathak Dance)</td>
+
+    <td class="hide">Bachelor's degree from Banasthali Vidyapith or recognized by Banasthali Vidyapith as equivalent.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.A. (Textile Designing-Weaving/Printing)</td>
+
+    <td class="hide">55% in B.A. (Textile / Drawing) B.Sc. (Home Sc. with CT) B.F.A./ B.E. Textile</td>
+
+    <td>2 yrs.</td>
+</tr>   
+
+<tr>
+    <th colspan="3">Engineering & Technology</th>
+</tr>
+
+<tr>
+    <td>B.Tech. (Computer Science and Engineering/Computer Science-Artificial Intelligence(CSAI)# /Electronics and Communication/ Electronics and Instrumentation/ Electrical and Electronics/ Information Technology/ Bio Technology/ Chemical Engineering/ Mechatronics)*</td>
+
+    <td class="hide">60% in 10+2 with Phy, Chemistry, Maths.</td>
+
+    <td>4 yrs.</td>
+</tr>
+    
+<tr>
+    <th colspan="3">Management Studies</th>
+</tr>        
+
+<tr>
+    <td>B.Com.</td>
+
+    <td class="hide">10 +2</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>BBA</td>
+
+    <td class="hide">10 +2</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>MBA*</td>
+
+    <td class="hide">50% in any Bachelor's degree</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Com.</td>
+
+    <td class="hide">Graduation in Commerce/Management/Economics</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Aviation</th>
+</tr>
+
+<tr>
+    <td>B.Sc. (Aviation Science)</td>
+
+    <td class="hide">10+2</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Mathematics & Computing</th>
+</tr>
+
+<tr>
+    <td>B.Sc. (Mathematics)</td>
+
+    <td class="hide">55% in 10+2 with Maths</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>BCA</td>
+
+    <td class="hide">55% in 10+2</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. (Computer Science)</td>
+
+    <td class="hide">55% in B.Sc./ B.A.(Computer Science)/
+        (Computer Application) / BCA</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc. Data Science#</td>
+
+    <td class="hide">   B. Sc. Mathematics, B. Sc
+        Computer Science/IT, BCA, B. Tech,
+        B.Stat., B.Math., BA/ BBA/ B.Com/B.
+        Pharm/B.Sc. with mathematics and/or
+        Computer Science as a subject, with a
+        minimum 55% marks   </td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.A./M.Sc. (Mathematical Science)</td>
+
+    <td class="hide">55% in  B.A./B.Sc with Maths.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>MCA</td>
+
+    <td class="hide">Passed in BCA/ Bachelor Degree or passed B.Sc./B.Com./B.A. with Mathematics at 10+2 Level or at Graduation Level (with additional bridge courses). Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying examination.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>PGDCA (Bridge Course)</td>
+
+    <td class="hide">50% in B.Sc./B.Com./B.A. with Mathematics at 10+2 Level or at Graduation Level.    </td>
+
+    <td>1 yr.</td>
+</tr>
+
+<tr>
+    <td>M.Tech.  (Computer Science/ IT)</td>
+
+    <td class="hide">B.E./ B.Tech.(C.S. & Engg.)/ M.Sc   (C.S.)/ MCA/ M.Sc. Maths (TCS) with a minimum of 55% aggregate marks.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Tech. (Artificial Intelligence)#</td>
+
+    <td class="hide">B.E./B.Tech./MCA/M.Sc.
+        (CS/IT/Mathematics/Physics/Electronics)
+        with a minimum 55% Marks.</td>
+
+    <td>2 yrs.</td>
+</tr>
+    
+<tr>
+    <td>M.Tech. (Robotics & Automation)#</td>
+
+    <td class="hide">B.E./B.Tech./M.Sc.
+        (Electronics) with a minimum 55% Marks.</td>
+
+    <td>2 yrs.</td>
+</tr>
+        
+<tr>
+    <th colspan="3">Home Science</th>
+</tr>       
+    
+<tr>
+    <td>B.Sc. (Home Science)</td>
+
+    <td class="hide">50% in 10+2</td>
+
+    <td>3 yrs.</td>
+</tr>
+
+<tr>
+    <td>M.Sc.(Home Science) Human Development/ Food
+        Science & Nutrition/Clothing & Textile)</td>
+
+    <td class="hide">55% in B.Sc. Home Science</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+
+<tr>
+    <th colspan="3">Law</th>
+</tr>
+
+<tr>
+    <td>B.A. L.L.B.</td>
+
+    <td class="hide">45% aggregate in Senior Secondary School Certificate Examination</td>
+
+    <td>5 yrs.</td>
+</tr>
+
+<tr>
+    <td>LL.B.(B.Com.)</td>
+
+    <td class="hide">45% aggregate in Senior Secondary School Certificate Examination</td>
+
+    <td>5 yrs.</td>
+</tr>
+
+<tr>
+    <td>LL.B.(BBA)</td>
+
+    <td class="hide">45% aggregate in Senior Secondary School Certificate Examination</td>
+
+    <td>5 yrs.</td>
+</tr>
+
+<tr>
+    <td>LL.M. *</td>
+
+    <td class="hide">Graduation in Law (5 year integrated law / 3 year LL.B.</td>
+
+    <td>1 yr.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Journalism</th>
+</tr>
+
+<tr>
+    <td>B.A. (Journalism and Mass Communication)</td>
+
+    <td class="hide">50% aggregate in Senior Secondary School Certificate Examination</td>
+
+    <td>3 yrs</td>
+</tr>
+
+<tr>
+    <td>M.A. (Journalism and Mass Communication)</td>
+
+    <td class="hide">Bachelor's degree from Banasthali Vidyapith or recognized by Banasthali Vidyapith as equivalent.</td>
+
+    <td>2 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3">Nursing</th>
+</tr>
+        
+<tr>
+    <td>B.Sc. (Nursing)</td>
+
+    <td class="hide">10+2 with Sc. (PCB) with aggregate of 45%, (Min. age of 17 yrs.)</td>
+
+    <td>4 yrs.</td>
+</tr>
+
+<tr>
+    <th colspan="3"><a href="HigherPHD.html">Ph.D. Programmes</a></th>
+</tr>
+ </table>
+</div> 
+
+<div class="para">
+<p>* Admission to this course shall be based on merit-cum-aptitude test.
+   Admission to all other courses shall be based upon merit in the qualifying examination.</p>
+
+<p># Subject to approval</p>
+
+<p>Foreign/NRI/NRI sponsored Admissions</p>
+
+<p>A limited number of seats are available for Foreign/NRI/NRI sponsored candidates. Admission against these seats are based directly upon the merit and the applicants do not have to appear in the Aptitude Test. The eligibility for Foreign/NRI/NRI sponsored candidates is 40% aggregate marks in the qualifying examination (Except for B.Ed. where it is 50% and M.Ed. where it is 55%).</p>
+<p>
+    The following documents are required for admission against Foreign/NRI/NRI sponsored seats:<br>
+(i) Original Certificates/ Marksheets of the qualifying examination.<br>
+(ii) Attested photocopies of the Passport and Visa of the NRI Sponsor of the applicant.<br>
+(iii) Foreign Bank Account Number or NRI Account Number of the NRI applicant or NRI Sponsor of the applicant.<br>
+(iv) Declaration regarding, Non-Resident Indian status of the NRI applicant or NRI Sponsor of the applicant.
+</p>
+<p>RE-ADMISSION : If a student is separated from Banasthali or Shri Shantabai Shiksha Kutir and in the event Banasthali Vidyapith decides to readmit her, admission fee of Rs. 5,000/- shall be payable. The admission of a student shall be automatically cancelled due to unauthorized absence of three days or more.
+</p>
+
+<p>Absence without prior written permission from the Vidyapith shall be treated as unauthorized absence.</p>
+
+</div>
+</div>
+
+</body>
+</html>

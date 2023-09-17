@@ -1,0 +1,187 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Automation</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Automation.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h3{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 20px;
+			color: dark blue;
+		}
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Automation.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Automation.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Automation.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Automation.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Automation</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1AU.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2AU.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3AU.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h3><p>The School of Automation at Banasthali is quintessence of the University's relentless pursuit of excellence, where the students are exposed to real-world situations. The School was developed in collaboration with the Bajaj Group, one of the most distinguished business houses of India, provides the much needed modern engineering environment to the students to create systems and products with state of art infrastructure where the engineering graduates would learn to design innovative projects. The students would not only be trained hands on in real- life engineering tools but would also learn multi- disciplinary approach to fulfil societal and industrial requirements.<br><br>
+
+			The School of Automation offers B.Tech. Programme in Electrical & Electronics, Electronics & Instrumentation and Mechatronics. The School also offers the elective courses in field of Mechatronics & Robotics to other B. Tech. Programme of University. The School is immersed in research & development in area of Machine Learning, Process Control, Humanoid, Robot Manipulations, Power system, Power Electronics, Renewable Energy, Industrial Automation and Manufacturing Technology.<br><br>
+
+			The School of automation is equipped with most modern industrial setup procured from global technology giants such as BOSCH, FESTO, KUKA, Siemens, SMC, Mitsubishi, M-TAB and Janatics. The School features sophisticated laboratories which are the requirement of modern day automation including Computer Integrated Manufacturing (CIM) Lab, Advanced robotics, Mechatronics Lab, Hydraulics Lab, Pneumatics Lab, Virtual Lab, e-learning Lab, Programmable Logic Controller (PLC) Lab and Industry 4.0 to name a few.  The School also houses some basic labs like Sensorics Lab, Electrical Machine and Drives Labs. The School was able to attract the companies like Schenider to offer on-line program, scholarships and on campus and off campus placements. The B. Tech. programme has University Industrial Linkage as an integral part its curriculum in which students is pursuing their projects with external organizations. The students graduating from this department are placed in various companies of repute.            
+			</p><h3>
+		</div>
+		
+		<div class="transbox2" style="margin-top: 20px;">
+			<h2><p><center>Infrastructure and Facilities</center>
+			<ol type="1" style="margin-left: 15%; font-size: 20px">
+				<li>1. Robotics Lab</li>
+
+				<li>2. Hydraulics Lab</li>
+
+				<li>3. Pneumatics Lab</li>
+
+				<li>4. AutoCAD Lab</li>
+
+				<li>5. Microprocessor and Microcontroller Lab</li>
+
+				<li>6. Digital Electronics Lab</li>
+
+				<li>7. Electrical Machine I and II Lab</li>
+
+				<li>8. Electrical Drives and Control Lab</li>
+
+				<li>9. Integrated Circuits Lab</li>
+
+				<li>10. Lab</li>
+
+				<li>11. Advance PLC Lab</li>
+
+				<li>12. Lab</li>
+
+				<li>13. Digital Signal Processing Lab</li>
+
+				<li>14. Switchgear and Protection Lab</li>
+
+				<li>15. CIMS Lab</li>
+			</ol>
+            
+			</p><h2>
+		</div>
+		
+	</body>
+	
+</html>

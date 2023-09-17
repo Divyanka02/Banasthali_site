@@ -1,0 +1,150 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Law</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Law.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Law.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Law.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Law.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Law.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Law</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1L.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2L.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3L.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>Banasthali Vidyapith has long history of nurturing women leaders in all walks of life. Of late its IT, Management and Technology graduates have won accolades for themselves and their alma mater. In the same line, the Vidyapith has conceptualized an all women's law school to nurture legal professionals of the highest order possessing the usual strong virtues of the Vidyapith. Faculty of Law at the Banasthali Vidyapith was established in the year 2013 with the aim of imparting world class legal education to girls from various parts of the country.<br><br>
+
+			The Jamnalal Bajaj Foundation very kindly consented to give a onetime philanthropic grant to partially meet the expenses of the Law School Building, named as Jamnalal Bajaj School of Legal Studies. The vision of legal education is to provide justice oriented education essential to the realization of values enshrined in the Constitution of India.<br><br>
+
+			Legal education as an aspect of professional education has assumed considerable significance, not only in terms of the historical utility of law in society but also in the current context of globalization. Legal education is a vital link in the creation of knowledge concept as well as in the application of such concept in society. The need for trained law personnel in academia, litigation, corporate practice, government and civil society has increased significantly over the last few years and it is estimated that the demand for such trained personnel will rise far more exponentially in the years to come.<br><br>
+
+			The Law School aims at preparing women legal professionals who will play decisive leadership roles, not only as advocates practicing in courts, but also as academicians, legislators, judges, policy makers, public officials, civil society activists, and legal counsels in the private sector, maintaining the highest standard of professional ethics and a spirit of public service. We are aware that legal education should also prepare professionals equipped to meet the new challenges and dimensions of internationalization, where the nature and organization of law and practice are undergoing a paradigm shift. At the same time, legal education must also be socially engaged and sensitize students to issues of social justice. New and innovative solutions are needed to ensure that common people have access to justice, and the legal ideas and legal knowledge protect their interests. Therefore, it is imperative that legal education should prepare students with the aptitude, interest, commitment, skills and knowledge necessary to work with socially excluded people and the poor at the grass-root level to advance the cause of justice.<br><br>
+
+			Keeping the above objective in mind and the unmatchable model of Panchmukhi Shiksha (Fivefold Education), which is the hallmark of Banasthali Vidyapith, we are striving hard in implementing holistic legal education, research and training with specialization in Intellectual Property laws and Business laws. In the years to come, the curricula will include papers related to the emerging areas of Intellectual Property laws and Business Laws.<br><br>
+
+			The Faculty of Law has excellent infrastructure, research-friendly library facilities, availability of computers and internet, digitization of case laws, access to latest journals and legal database, besides well-qualified and experiences faculties.<br><br>
+
+			The teaching methods adopted for the degree programs are such as to promote multi-disciplinary inquiry and practical appreciation of problems. The methods of teaching involve lectures, discussions, case studies, moot courts, and project work. Efforts are also being made to expose students to court room realities. Projects and assignments are other components of each course that require both literature survey and field investigation. These methods help in improving research skills, analytical abilities as well as the communication skills of the students.            
+			</p><h2>
+		</div>
+	</body>
+	
+</html>

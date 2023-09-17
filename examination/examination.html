@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examination</title>
+    <link rel="stylesheet" href="D:\wamp\www\Divyanka_PHP_programs\Banasthali\style.css">
+    
+</head>
+<style>
+ /*UPPER NAVBAR*/
+/* Add a black background color to the top navigation */
+.upsidenav {
+    background-color: #01142c;
+    overflow: hidden;
+   
+  }
+  
+  /* Style the links inside the navigation bar */
+  .upsidenav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+   
+  }
+  
+  /* Change the color of links on hover */
+  .upsidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+ 
+     
+  
+  
+  
+  
+  
+  
+  /* MAIN NAVBAR*/
+  .navigation
+  {
+  background-color: #01142c;
+  }
+  .navigation > .container
+  {
+  max-width:90%;
+  margin:auto;
+  }
+  .navigation .navbar
+  {
+  position:relative;
+  }
+  .navigation .navbar .logo-toggle-container
+  {
+  position:absolute;
+  left:50%;
+  top:5px;
+  transform:translateX(-50%);
+  }
+  .navigation .navbar .logo-toggle-container a
+  {
+  display:block;
+  }
+  .navigation .navbar .logo-toggle-container a img
+  {
+      margin-top: 8px;
+      margin-right: 80px;
+      margin-left:30px;
+  width:100px;
+  }
+  .navigation .menu
+  {
+  text-align:right;
+  }
+  .admission{
+  
+    background-color: rgb(241, 235, 235);
+    color: #000 !important;
+    border-radius: 20px;
+  
+  }
+  @media screen and (min-width:1024px)
+  {
+  .navigation .menu
+  {
+  display:block !important;
+  height:auto !important;
+  }
+  }
+  .navigation .menu li
+  {
+  display:inline-block;
+  padding:43px 10px;
+  }
+  .navigation .menu li a
+  {
+  display:block;
+  padding:8px 15px;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:1px;
+  color:rgb(255, 253, 253);
+  font-size:16px;
+  }
+  .navigation .menu li:nth-child(1),
+  .navigation .menu li:nth-child(2),
+  .navigation .menu li:nth-child(3)
+  {
+  float:left;
+  }
+  .navigation .menu li:hover a
+  {
+  background-color:rgb(238, 238, 240);
+  color:rgb(10, 10, 10);
+  }
+  @media screen and (max-width:767px)
+  {	
+  .navigation .navbar .logo-toggle-container
+  {
+  position:static;
+  transform:translateX(0%);
+  }
+  .navigation .navbar .logo-toggle-container a
+  {
+  width:80%;
+  }
+  .navigation .navbar .logo-toggle-container .toggle-box
+  {
+  position:absolute;
+  right:10px;
+  top:30px;
+  display:block;
+  width:30px;
+  background:#000;
+  padding:15px 9px;
+  cursor:pointer;
+  border-radius:5px;
+  }
+  .navigation .navbar .logo-toggle-container .toggle-box span
+  {
+  display:block;
+  max-width:90%;
+  margin:auto;
+  height:2px;
+  background-color:rgb(255, 255, 255);
+  margin-bottom:4px;
+  }
+  .navigation .navbar .logo-toggle-container .toggle-box span:last-child
+  {
+  margin-bottom:0;
+  }
+  .navigation .menu
+  {
+  text-align:center;
+  display:none;
+  }
+  .navigation .menu li
+  {
+  display:block;
+  float:none !important;
+  padding:0 10px;
+  border-bottom:1px solid #ccc;
+  }
+  }
+  
+  
+  .photonav {
+    background-color: #01142c;
+    overflow: hidden;
+   
+  }
+  
+  /* Style the links inside the navigation bar */
+  .photonav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+   
+  }
+  
+  /* Change the color of links on hover */
+  .photonav a:hover {
+    background-color: white;
+    color: black;
+  }
+.photogallarynav {
+        background-color: #01142c;
+        overflow: hidden;
+       
+      }
+      
+
+ /* Style the links inside the navigation bar */
+     .photogallarynav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1rem;
+        
+      }
+      .photogallarynav h2{
+        margin-top: 30px;
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 5px gray;
+      }
+      
+      @media screen and (max-width:767px){
+        .photogallarynav a img{   
+            width: 200px;
+           
+        }
+        .photogallarynav h3{
+          font-size: 2.5rem;
+        }
+       
+    
+      }
+     
+	 #wrapper {
+		max-width: 100%;
+		margin: 0 auto;
+		background-color: white;
+		padding:30px;
+}
+
+header {
+	background-color: #000080;
+	height: 100px;
+	padding: 20px;
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	line-height: 0px;
+}
+
+.main menu {
+	padding: 2px 2px 2px 2px 2px;
+	text-align: left;
+	line-height: 2px;
+	background-color: #000080;
+	max-width:100%;
+}
+
+ul.main_menu {
+	margin-top: 20px;
+}
+
+.main_menu li {
+	display: inline;
+	padding: 3px 3px 3px 3px 3px;
+	font-size: 30px;
+	background-color: #000080;
+	max-width:100%;
+	}
+
+.main_menu a {
+	text-decoration: none;
+	color: white;
+	padding: 2px 2px 2px 2px 2px;
+	max-width:100%;
+	padding:45px;
+}
+
+.main_menu a:hover {
+	color: gray;
+}
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+
+}
+.main{
+
+ margin: 2%;
+}
+h2{
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+
+</style>
+<body>
+  <div class="upsidenav" id="upsidenav">
+  
+    <a href="feedback.html">Feedback</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="howtoreach.html">How to Reach</a>
+ 
+  </div>
+  <div class="navigation">
+      <div class="container">
+         <div class="navbar">
+            <div class="logo-toggle-container">
+               <a href="#">
+               <img src="logo2.jpg" alt="logo" style="border-radius:50%"/>
+               </a>
+               <span class="toggle-box">
+               <span></span>
+               <span></span>
+               <span></span>
+               </span>
+            </div>
+            <ul class="menu">
+               <li><a href="homepage.php">HOME</a></li>
+               <li><a href="aboutus.html">ABOUT US</a></li>
+               <li><a href="schooleducation.php" target="blank">SCHOOL EDUCATION</a></li>
+               <li><a href="HigherEducation.html" target="blank">HIGHER EDUCATION</a></li>
+               <li><a href="CampusPage.html">CAMPUS</a></li>
+               <li><a href="higherAdmissionForm.html" class="admission">ADMISSION</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <CENTER>
+<p><h2>The conduct of examinations and declaration of results is one of the important activities of the Vidyapith. <br>The Examination Department is backbone of the examination system.
+
+The examination system should be <br>fair, efficient, reliable and transparent.The Department strives hard towards these goals to achieve credibility.<br> A fairly good record of the Vidyapith in smooth conduct of examinations and timely declaration of results.
+
+<br>In recent times, the Vidyapith has taken several initiatives to ensure better standards and improve accuracy, <br>efficiency and transparency in the various steps involved in the conduct and declaration of results of <br>examinations.
+ <br><br>
+<table border="0" width="482" height="141">
+	<tbody>
+		<tr>
+			<td><span style=""><strong><span style="letter-spacing: 1.05pt; font-family: Arial; color: #004891"><span>&nbsp;<a href="school exam result.html"><span style="color: #993300">Results</span></a> </span></span></strong></span></td>
+		</tr>
+		<tr>
+			<td><span style=""><strong>&nbsp;</span><a href="05-Document_VerificationForm.pdf"><span style=" color: #993300"><strong><span style="letter-spacing: 1.05pt; font-family: Arial"><span>Download Various Forms</span></span></strong></span></a>  </td>
+		</tr>
+		
+	</tbody>
+</table>
+ 

@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+	<head>
+		<title>Login Form</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				font-family: sans-serif;
+			}
+
+			body{
+					background: url('https://www.crushpixel.com/big-static9/preview4/smiling-dark-haired-female-student-287830.jpg') no-repeat;
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-size: 100% 100%;
+				}
+
+			.login-form{
+					width: 350px;
+					top: 40%;
+					left: 30%;
+					transform: translate(-50%,-50%);
+					position: absolute;
+				}
+			.login-form h1{
+				font-size: 40px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			.login-form p{
+				font-size: 20px;
+				margin: 15px 0;
+			}
+			.login-form input{
+				font-size: 16px;
+				width: 100%;
+				padding: 15px 10px;
+				border: 0;
+				outline: none;
+				border-radius: 5px;
+			}
+			.login-form button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="login-form">
+			<h1>Student Login</h1>
+			<form action="login.php" method="post">
+				<p>User Name</p>
+				<input type="text" name="user" placeholder="User Name">
+				<p>Password</p>
+				<input type="password" name="password" placeholder="Password">
+				<!--<p><a href="D:\Banasthali\Student Portal\Login to Portal\OTP-Form.html">Forgot Password ?</a></p>-->
+				<button type="submit">Log In</button>
+			</form>
+		</div>
+	</body>
+	<!--https://www.crushpixel.com/big-static9/preview4/smiling-dark-haired-female-student-287830.jpg-->
+</html>

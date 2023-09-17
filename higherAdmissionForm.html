@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>HIGHER EDUCATION |ADMISSION FORM</title>
+    
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+/*SCHOOL NAVBAR 1*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color:#084ca4;
+    height: 17vh;
+    width: 100%;
+
+
+}
+.nav img{
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.nav h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px gray;
+    margin-top: 40px;
+    margin-left: 310px;
+}
+@media screen and (max-width: 800px) {
+    .nav img{
+        margin-left: 10px;
+        width: 200px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 40px;
+        margin-top: 40px;
+        margin-left: 30px;
+        text-shadow: 5px 5px 10px gray;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav img{
+        margin-left: 10px;
+        width: 150px;
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 15px;
+        text-shadow: 5px 5px 10px gray;
+    }
+
+}
+
+/*SECOND NAVABR*/
+
+/* Add a black background color to the top navigation */
+.schoolnav2 {
+background-color: #123f79;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.schoolnav2 a {
+float: left;
+display: block;
+color: white;
+font-weight: 500;
+text-align: center;
+padding: 12px 10px;
+text-decoration: none;
+font-size: 16px;
+margin-left: 20px;
+}
+
+/* Change the color of links on hover */
+.schoolnav2 a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Hide the link that should open and close the schoolnav2 on small screens */
+.schoolnav2 .icon {
+display: none;
+}
+@media screen and (max-width: 600px) {
+.schoolnav2 a:not(:first-child) {display: none;}
+.schoolnav2 a.icon {
+  float: right;
+  display: block;
+}
+}
+
+/* The "responsive" class is added to the schoolnav2 with JavaScript when the user clicks on the icon. This class makes the schoolnav2 look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.schoolnav2.responsive {position: relative;}
+.schoolnav2.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.schoolnav2.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+    .section1{
+        margin-top: 30px;
+        height: 200vh;
+        background-color: rgba(202, 205, 207, 0.514);
+    
+    }
+    @media screen and (max-width: 900px){
+    .section1{
+       width:110vh;
+       height:180vh;
+      }
+    }
+    @media screen and (max-width: 600px){
+    .section1{
+       width:74vh;
+       height:230vh;
+      }
+    }
+    .section1 h1{
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 3px 3px 5px gray;
+        margin-bottom: 20px;
+    }
+    /*@media screen and (max-width: 900px){
+        .section1 h1{
+       width:100vh;
+       margin-left:10px;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .section1 h1{
+       width:70vh;
+       margin-left:15px;
+      }
+    }*/
+    .section1 .admissionline{
+        width: 90%;
+        height: 2px;
+        background-color: black;
+        margin-left: 80px;
+    }
+    @media screen and (max-width: 900px){
+        .section1 .admissionline{
+       width:105vh;
+       margin-left:10px;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .section1 .admissionline{
+       width:70vh;
+       margin-left:15px;
+      }
+    }
+    .section1 .higheradmissionform{
+        margin-left: 300px;
+        background-color: rgb(207, 160, 160);
+        margin-right: 300px;
+        height:165vh;
+    }
+    @media screen and (max-width: 900px){
+        .section1 .higheradmissionform{
+       width:100vh;
+       margin-left:30px;
+       height:155vh;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .section1 .higheradmissionform{
+       width:70vh;
+       margin-left:15px;
+       height:200vh;
+      }
+    }
+    .section1 .higheradmissionform p{
+        font-size: 23px;
+        margin: 15px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+   
+    input[type="text"],
+    input[type="number"],
+    input[type="password"]{
+        padding: 6px;
+        margin-left: 50px;
+        width: 400px;
+        border: 0;
+    }
+    @media screen and (max-width: 900px){
+        input[type="text"],
+    input[type="number"],
+    input[type="password"]{
+      margin-left:0;
+      }
+    }
+    @media screen and (max-width: 600px){
+        input[type="text"],
+    input[type="number"],
+    input[type="password"]{
+       margin-left:0;
+      }
+    }
+    input[type="radio"]{
+        padding: 10px;
+        margin-left: 50px;
+
+
+    }
+    .section1 .higheradmissionform .btn{
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 200px;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+    .section1 .higheradmissionform .btn:hover{
+        background-color: black;
+        color: white;
+    }
+    </style>
+    <body>
+        <div class="nav">
+            <img src="logo.jpg" alt="logo">
+            <h1>HIGHER EDUCATION</h1>
+        </div>
+        <div class="schoolnav2" id="schoolnav2">
+         <a href="HigherEducation.html">HOME </a>
+         <a href="#">DEPARTMENT</a>
+         <a href="http://www.banasthali.org/banasthali/wcms/en/home/examination/index.html" target="blank">EXAMINATION</a>
+         <a href="higherAdmissionForm.html">ADMISSION</a>
+         <a href="HigherFees.html">FEE STRUCTURE</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+
+<div class="section1">
+    <h1>ADMISSION FORM</h1>
+    <div class="admissionline"></div>
+    <form method="post" action="higherAdmissionForm.php" class="higheradmissionform">
+    <p> Name: * <input type="text" name="name" required></p>
+    <p> Date Of Birth: <input type="text" name="dob" ></p>
+    <p> Father's Name: <input type="text" name="fname"></p>
+    <p> Mother's Name: <input type="text" name="mname"></p>
+   <p>  Email: * <input type="text" name="email" required></p>
+   <p>Course :
+    <input type="radio" name="course" value="1">UG
+    <input type="radio" name="course" value="2">PG
+    <input type="radio" name="course" value="3">PhD
+</p>
+    <p>  Address: * <input type="text" name="address" required></p>
+    <p>  City: <input type="text" name="city"></p>
+    <p>  State: <input type="text" name="state"></p>
+    <p>  Pincode: <input type="number" name="pincode"></p>
+    <p>Contact Number: *<input type="number" name="number" required></p>
+    <br>
+    <input type="submit" value="Submit" class="btn">
+
+</form> 
+</div>
+
+
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Physical-Sciences</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Physical-Sciences.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Physical-Sciences.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Physical-Sciences.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Physical-Sciences.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Physical-Sciences.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Physical Sciences</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="1P.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="2P.png" style="width:100%">
+  <div class="text">Images are real</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>Apaji Institute of Mathematics & Applied Computer Technology (AIM & ACT) is the faculty of Mathematics, Computing and related disciplines, i.e., IT, Statistics. Over the past thirteen years, it has earned the reputation of one of the important national centers for research and education in its constituent fields. The range of programs offered by the faculty and research in the institute show that a complete synergy is attained in various disciplines in terms of courses offered and research outcomes.<br><br>
+
+			The world class infrastructure and highly qualified faculty of the institute attract students from all over the country. The institute has representation in all national and many international conferences, seminars, workshops, and regularly organizes such activities. It has to its credit a large number of R&D projects sponsored by national bodies and industry. The industry placement has been consistently very good where students from all disciplines are hired on campus by major IT companies of India and are offered the best of the salaries offered elsewhere. 
+			</p><h2>
+		</div>
+		<div class="transbox2">
+			<center><p><h2>Department of Mathematics & Statistics</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="math.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">   
+						Mathematics is the music of mind and it attracts people of finest minds in the world. It is the backbone of all sciences. If a  question arises  like which came first in human civilization  - Mathematics or Language? Certainly the answer is Mathematics. If we go back to the begining of stone-age civilization we can see that people used to count their domestic animals by using different stones, and they used body languages to express their mind.<br><br>
+
+						If we study Vedic Mathematics then we can find that the most important number 'Zero' was discovered in India. One of the important irrational like  'Pie' was discovered by the great Indian Mathematician Aryabhatte (476 - 550 AD), who was born in Patliputra in Magadh.<br><br>
+
+						Today there is no nobel prize in Mathematics but International Mathematical Union (IMU) offers Fields Medal once in every four years during International Congress of Mathematicians. (ICM) which is equivalant to nobel prize.   
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox3">
+			<center><p><h2>Department of Computer Science</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">Computer Science is at the forefront of professional education worldwide transition of traditional organization and enterprises towards IT has been momentum the need of hour. It started with scientific and engineering application and moved towards e-governance, ERP and E-commerce. The importance of Computer Science was recognized very early in this university. The department of Computer Science in AIM & ACT is one of the most renowned in the country.<br><br>
+ 
+ World class infrastructure and competent faculty actively engaged in research and development are the salient feature of the department . Currently there are M.Tech. (CS/IT), B.Tech. (CSE/IT), MCA, M.Sc.(CS), BCA and some part time courses programs running in the department.<br><br>
+ 
+ Use of  latest teaching pedagogy, smart classrooms, focus on basics, and interaction with industry help produce highly competent and skilled students.
+ 
+					</th>
+					<th><img src="comp.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+	</body>
+	
+</html>

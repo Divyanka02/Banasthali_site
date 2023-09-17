@@ -1,0 +1,95 @@
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Student Login Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Student Login Page.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				font-family: sans-serif;
+			}
+
+			body{
+					background: url("backimg.jpg") no-repeat;
+					<!--background: url('https://www.crushpixel.com/big-static9/preview4/smiling-dark-haired-female-student-287830.jpg') no-repeat;-->
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-size: 100% 100%;
+				}
+
+			.login-form{
+					width: 350px;
+					top: 40%;
+					left: 30%;
+					transform: translate(-50%,-50%);
+					position: absolute;
+				}
+			.login-form h1{
+				font-size: 40px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			.login-form p{
+				font-size: 20px;
+				margin: 15px 0;
+			}
+			.login-form input{
+				font-size: 16px;
+				width: 100%;
+				padding: 15px 10px;
+				border: 0;
+				outline: none;
+				border-radius: 5px;
+			}
+			.login-form button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<!--header area start-->
+		<header>
+			<div class="left_area">
+				<a href="Student Login Page.html" class="logo" target="_blank">
+				<img src="Student Portal Logo.png" alt="Student-Portal-Logo" height="50" style="margin-top: -7px" style="box-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue">
+				</a>
+				<a href="../user.php" target="_blank" class="home_btn">
+					<i class="fas fa-home" style="vertical-align:middle;margin-right:30px" button onclick="../user.php"></i>
+				</a>
+			</div>
+		</header>
+		<!--header area close-->
+		
+		<!--FORM AREA START-->
+		<div class="content">
+			<div class="login-form">
+			<h1>Student Login</h1><br>
+
+			<form action="login.php" method="POST">
+
+			Email: <input type="text" name="user" placeholder="Email"/><br><br>
+
+			password: <input type="password" name="pass" placeholder="Password"/><br><br>
+
+			 <input type="submit" name="submit"/>
+
+			</form>
+		</div>
+		</div>
+	</body>

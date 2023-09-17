@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+   
+</head>
+<style>
+    
+    .feedback{
+      
+        display: flex;
+         flex-direction: row;
+        
+       
+        background-image: linear-gradient(white,#e2ebf6,white);
+    }
+    .feedback .form{
+        padding: 20px;
+        margin-left:150px;
+        margin-right:50px;
+        flex: 60%;
+      
+    }
+    .feedback .image{
+        padding: 10px;
+        flex: 40%;
+    }
+    .feedback .image img{
+        margin: 20px;
+        width: 400px;
+        height: 500px;
+    }
+     h2{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: black;
+        text-shadow: 3px 3px 5px gray;
+        text-decoration:underline;
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+   
+.feedback p{
+    font-size: 1.9rem;
+    color: black;
+    font-weight: bold;
+}
+    input[type="text"],
+input[type="email"],
+select,textarea{
+    width: 70%;
+    padding: 6px;
+    font-size: 1.3rem;
+    border: 2px solid #01142c;
+    margin: 1rem;
+    
+
+}
+.feedback .btn{
+    cursor: pointer;
+     color : black;
+    font-size: 1.7rem;
+    border: 2px solid #01142c;
+    font-weight: bold;
+    
+    
+}
+.feedback .btn:hover{
+    background-color:  #01142c;
+    color: white;
+    
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback .form{
+       
+        margin-left:50px;
+        margin-right:10px ;
+        
+    }
+}
+</style>
+<body>
+   
+   
+    <div class="upsidenav" id="upsidenav">
+  
+        <a href="feedback.html">Feedback</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="howtoreach.html">How to Reach</a>
+     
+      </div>
+      <div class="navigation">
+          <div class="container">
+             <div class="navbar">
+                <div class="logo-toggle-container">
+                   <a href="#">
+                   <img src="logo2.jpg" alt="logo" style="border-radius:50%"/>
+                   </a>
+                   <span class="toggle-box">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   </span>
+                </div>
+                <ul class="menu">
+                   <li><a href="homepage.php">HOME</a></li>
+                   <li><a href="About-Us.html" target="blank">ABOUT US</a></li>
+                   <li><a href="schooleducation.php" target="blank">SCHOOL EDUCATION</a></li>
+                   <li><a href="HigherEducation.html" target="blank">HIGHER EDUCATION</a></li>
+                   <li><a href="CampusPage.html">CAMPUS</a></li>
+                   <li><a href="higherAdmissionForm.html" class="admission">ADMISSION</a></li>
+                </ul>
+             </div>
+          </div>
+       </div>
+
+
+
+       
+
+     <h2>FEEDBACK FORM</h2>
+     <hr>
+<div class="feedback"> 
+    
+   
+<form action="createfeedbacktable.php" method="post" class="form">
+    <p>
+    <p>Email : <br><input type="email" name="email" placeholder="eg : harry234@gmail.com" required>*</p><br>
+    <p>Name : <br><input type="text" name="name" placeholder="eg : Harry"></p><br>
+    <p>Visitor Type : <br><select name="visitor_type" name="visitortype" required>
+        <option value="select">select</option>
+        <option value="student">Student</option>
+        <option value="facuilty">Facuilty</option>
+        <option value="management">Management</option>
+        <option value="visitor">Visitor</option>
+    </select>*</p><br>
+    <p> City : <br><input type="text" name="city" placeholder="eg : Bihar"></p><br>
+    <p> Comments : <br><textarea name="comment" cols="30" rows="7" required></textarea>*</p>
+    <button type="submit" class="btn">Submit</button>
+   
+</form>
+<div class="image">
+    <img src="thanks.gif">
+</div>
+<br>
+<br>
+<br><br>
+</div>  
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+			$(".navigation .navbar .logo-toggle-container .toggle-box").click(function(){
+				$(".navigation .menu").stop().slideToggle();
+			});
+		});
+   </script> 
+</body>
+</html>

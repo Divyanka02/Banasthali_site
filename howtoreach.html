@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to reach</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+     <!-- Boxicons CDN Link -->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    /* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  background:#01142c;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 180px;
+}
+
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 230px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #3e3ed3;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+
+.home-section{
+  position: relative;
+  background: #ffffff;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: block;
+}
+h1{
+    font-weight: bold;
+    color: black;
+   
+}
+.map{
+    width: 600px;
+    margin-left: 30%;
+
+}
+.mapvideo{
+  width:600px;
+  height:500px;
+  margin-left: 30%;
+}
+
+.howtoreachpara{
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+}
+@media (max-width: 720px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+  .sidebar{
+      top: 175px;
+      background-color: white;
+  }
+  .sidebar .logo-details{
+      top:0;
+  }
+  .sidebar .nav-list{
+  margin-top: 40px;
+  }
+  h1{
+      font-size: 2.6rem;
+  }
+  .map{
+    width:300px;
+    margin-left: 13%;
+}
+.mapvideo{
+  width:300px;
+  
+  margin-left: 13%;
+}
+
+.howtoreachpara{
+    font-size: 18px;
+    width: 90%;
+    margin: 0;
+}
+}
+
+</style>
+<body>
+   
+   
+   
+  <div class="upsidenav" id="upsidenav">
+  
+    <a href="feedback.html">Feedback</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="howtoreach.html">How to Reach</a>
+ 
+  </div>
+  <div class="navigation">
+      <div class="container">
+         <div class="navbar">
+            <div class="logo-toggle-container">
+               <a href="#">
+               <img src="logo2.jpg" alt="logo" style="border-radius:50%"/>
+               </a>
+               <span class="toggle-box">
+               <span></span>
+               <span></span>
+               <span></span>
+               </span>
+            </div>
+            <ul class="menu">
+               <li><a href="homepage.php">HOME</a></li>
+               <li><a href="About-Us.html" target="blank">ABOUT US</a></li>
+               <li><a href="schooleducation.php" target="blank">SCHOOL EDUCATION</a></li>
+               <li><a href="HigherEducation.html" target="blank">HIGHER EDUCATION</a></li>
+               <li><a href="CampusPage.html">CAMPUS</a></li>
+               <li><a href="higherAdmissionForm.html" class="admission">ADMISSION</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+     <br>
+    
+    
+          
+  <div class="sidebar">
+    <div class="logo-details">
+       <!-- <i class='bx bx-grid-alt'></i>-->
+        <div class="logo_name">HOW TO REACH</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+     <!-- <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">MENU</span>
+        </a>
+         <span class="tooltip">MENU</span>
+      </li>-->
+      <li>
+        <a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/rail_map1.gif">
+          <i class='bx bx-train' ></i>
+          <span class="links_name">TRAIN ROUTE</span>
+        </a>
+         <span class="tooltip">TRAIN ROUTE</span>
+      </li>
+      <li>
+        <a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/road_map10.gif">
+            <i class='bx bx-car' ></i>
+          <span class="links_name">ROAD ROUTE</span>
+        </a>
+         <span class="tooltip">ROAD ROUTE</span>
+      </li>
+       <li>
+        <a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/air_map01.gif">
+            <i class='bx bxs-plane-alt'></i>
+          <span class="links_name">AIR ROUTE</span>
+        </a>
+         <span class="tooltip">AIR ROUTE</span>
+      </li>
+      
+    </ul>
+  </div>
+  <section class="home-section">
+      
+     <div class="text">
+         <center><h1>HOW TO REACH BANASTHALI</h1></center>
+         <hr>
+         <video src="howtoreachbv.mp4" autoplay loop muted class="mapvideo" ></video>
+        <br><br>
+        <p class="howtoreachpara"><strong>Banasthali is well linked by road, rail and air :</strong>  <br><br><br>
+
+            <strong><a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/road_map10.gif"> ROAD LINK :</a></strong>
+            72 km. from Jaipur. 8 km. off. Jaipur-Kota Road at 65 km. stone. There are 14 buses of Rajasthan Roadways Transport Corporation at Jaipur-Banasthali route.
+            <br><br>
+            <strong><a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/rail_map1.gif"> RAIL LINK :</a></strong>
+            Banasthali Newai Railway station is on the Jaipur-Swaimadhopur-Mumbai broad gauge line of the Western Railway. It is equidistance from Jaipur and Swaimadhopur, 66 Kms from both.
+            
+            Jaipur is on Delhi-Ahmedabad Broad-guage main line of Western Railway and there are direct trains to Jaipur from Delhi-Junction, Agra Fort, Ahmedabad, Indore, Mumbai, Udaipur, Bikaner, Jodhpur, Chennai, Bangalore, Howrah etc.
+            
+            Swaimadhopur is on Delhi-Mumbai Central Broad gauge main line of the Western Railways. Their are direct trains to Swaimadhopur from Agra Fort also.
+            <br><br>
+            <strong><a href="http://www.banasthali.org/banasthali/wcms/en/home/lower-menu/how-to-reach-banasthali/air_map01.gif">AIR LINK :</a></strong> Banasthali has its own licenced Air Field (09/26). Jaipur Airport is 59 km.
+            
+             </p>
+             <br><br>
+             <img src="Rajasthan_map.jpg" class="map">
+             <br><br><br><br>
+        </div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+ 
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
+
+</body>
+</html>

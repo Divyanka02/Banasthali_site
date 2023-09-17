@@ -1,0 +1,180 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Humanities</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Humanities.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Humanities.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Humanities.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Humanities.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Humanities.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Humanities</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1HU.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2HU.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3HU.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>Humanities embraces an understanding of philosophical beliefs, literatures, history of ancient and modern cultures and languages. The faculty encompasses disciplines of Sanskrit, the mother language of Indic family of languages, and Hindi along with Vedic Studies, Philosophy and Modern European Languages- English, German, French and Italian. These disciplines seek to engage students in analytical, critical thinking and creative use of all forms of information, languages and communication. There is a constant endeavor to discover innovative answers to fundamental human questions, puzzles and dilemmas and to integrate rational and intuitive knowledge of complex world.           
+			</p><h2>
+		</div>
+		<div class="transbox2">
+			<center><p><h2>Department of English & Modern European Languages</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="english.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">The Department of English and MEL runs regular courses in English, French and German. Need based certificate courses in conversational English, German, French and Spanish are also part of the academic programmes of the department. It came into being  in 1943 with the introduction of B.A in English. <br><br>
+					
+					The department started M.A. in English in 1963 and M.Phil.(ELT), still a rare course, in 1987. The doctoral work is performed both in literature and language. <br><br>
+					
+					The department functions on an interdisciplinary approach and caters to the needs of scholars interested in the areas of Indian Literature, American Literature and Sanskrit Aesthetics. Modern European languages (French and German) are very popular among students. A fully equipped language laboratory fulfills the demands of autonomous learning of language.   
+
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox3">
+			<center><p><h2>Department of Sanskrit, Philosophy & Vedic Studies</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">
+						This department started functioning in 1943 with Bachelor's programmes. The postgraduate programmes were introduced after 1957. <br><br> 
+						
+						The department had such eminent scholars as Pt. Jaydevdev Vidyalankar, Shri Ramchandra Vaman Kumbhre, Prof. Praveen Chandra Jain, Pt. Jagdish Chandra Sharma, Prof. Ramesh Chandra Shastri, Prof. Shyama Bhatnagar, Prof. Chandra Kishore Goswami and Dr. Kusumlata Arya. They enriched the department with the great breadth of their learning and the depth of intense specialization.  <br><br>
+						
+						Their creative research made an impact upon the community of scholars and their high level of sustained efforts nourished the intellectual life inspired by their association with the faculties of other Universities.
+					</th>
+					<th><img src="vedic.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox4">
+			<center><p><h2>Department of Hindi and Modern Indian Languages</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="hindi.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">The Department of Hindi and Modern Indian Languages is one of the oldest departments of Banasthali. The mission of the department is to provide aesthetic, practical and moral education to the students by means of literature and language. The department in addition to offering Hindi as a foundation course  or an elective course at bachelor's level and postgraduate level also assists in  developing communication skills and in personality development by organizing seminars, workshops , debates and lecture and gives a platform to the research students aspiring for excellence. 
+
+					</th>
+				</tr>
+			</table></p>
+		</div>
+	</body>
+	
+</html>

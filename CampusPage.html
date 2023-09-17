@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusPage</title>
+</head>
+<style>
+  *{
+margin:0;
+padding:0;
+}
+
+.pic{
+margin:0;
+width: 100%;
+height: 500px;
+position: relative;
+background-image:url("Cam_Pic.jpg");
+background-repeat:repeat;
+background-size:100%;
+box-shadow: inset -10px -10px 20px black,
+inset 10px 10px 20px black;
+}
+@media screen and (max-width: 800px){
+.pic{
+height:300px;
+ }
+}
+@media screen and (max-width: 500px){
+.pic{
+height:200px;
+ }
+}
+
+.box-1{
+
+height:60vh;
+background-color:black;
+position:relative;
+}
+@media screen and (max-width: 800px){
+.box-1{
+height:60vh;
+}
+}
+@media screen and (max-width: 500px){
+.box-1{
+height:100vh;
+}
+}
+
+
+.heading{
+margin:0 40 30 0;
+padding:0;
+font-size:60px;
+color:white;
+text-align:right;
+}
+@media screen and (max-width: 800px){
+.heading{
+font-size:50px;
+}
+}
+@media screen and (max-width: 500px){
+.heading{
+font-size:40px;
+}
+}
+
+.para{
+color:white;
+font-size:20px;
+text-align:right;
+margin:0 50 0 0;
+line-height:1.5;
+}
+@media screen and (max-width: 800px){
+.para{
+font-size:15px;
+}
+}
+@media screen and (max-width: 500px){
+.para{
+font-size:18px;
+}
+}
+
+.area_pic img{
+
+width: 50%;
+height: 80%;
+background-repeat:no-repeat;
+
+background-size:100%;
+box-shadow: inset -10px -10px 20px black,
+inset 10px 10px 20px black;
+}
+@media screen and (max-width: 800px){
+.area_pic{
+width:100%;
+height:100%;
+}
+}
+@media screen and (max-width: 500px){
+.area_pic{
+width:100%;
+height: 320px;
+
+}
+}
+.head1{
+margin-right: 50px;
+}
+.area{
+margin-left: 20px;
+}
+.heading1{
+padding:0;
+font-size:60px;
+text-align:right;
+}
+@media screen and (max-width: 800px){
+.heading1{
+font-size:50px;
+}
+}
+@media screen and (max-width: 500px){
+.heading1{
+font-size:40px;
+}
+}
+.area_content{
+
+float: right;
+width:50%;
+
+}
+
+@media screen and (max-width: 800px){
+.area_content{
+width:100%;
+font-size:50px;
+float: none;
+}
+}
+@media screen and (max-width: 500px){
+.area_content{
+width:100%;
+font-size:40px;
+float: none;
+}
+}
+
+.girl{
+margin-top:10px;
+width:700px;
+height:600px;
+background-image:url("Banasthali_Radio.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+}
+@media screen and (max-width: 800px){
+.girl{
+width:100%;
+height:100%;
+}
+}
+@media screen and (max-width: 500px){
+.girl{
+width:100%;
+height:100vh;
+}
+}
+.coverage{
+
+margin-top:10px;
+width:600px;
+height:400px;
+background-image:url("Coverage_Area.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+}
+@media screen and (max-width: 800px){
+.coverage{
+float:bottom;
+width:100%;
+height:100%;
+}
+}
+@media screen and (max-width: 500px){
+.coverage{
+float:bottom;
+width:100%;
+height:100%;
+}
+}
+.heading3{
+margin:20px;
+padding:0;
+font-size:50px;
+color:white;
+}
+@media screen and (max-width: 800px){
+.heading3{
+font-size:50px;
+}
+}
+@media screen and (max-width: 500px){
+.heading3{
+font-size:40px;
+}
+}
+.para2{
+color:white;
+font-size:20px;
+margin:20;
+line-height:1.5;
+}
+@media screen and (max-width: 800px){
+.para2{
+font-size:15px;
+}
+}
+@media screen and (max-width: 500px){
+.para2{
+font-size:18px;
+}
+}
+.container-3{
+background-color:black;
+display:flex;
+height:55vh;
+
+}
+.container-4{
+text-align:center;
+height:130vh;
+width:100%;
+position:relative;
+background-color:grey;
+}
+@media screen and (max-width: 800px){
+.container-4{
+height:150vh;
+}
+}
+@media screen and (max-width: 500px){
+.container-4{
+height:240vh;
+}
+.container-3{
+flex-direction:column;
+height:125vh;
+}
+
+}
+.table1{
+margin-left:25%;
+}
+@media screen and (max-width: 500px){
+.table1{
+margin-left:10%;
+}
+}
+@media screen and (max-width: 800px){
+.table1{
+margin-left:0;
+}
+}
+.container-5{
+background-color:black;
+
+}
+.heading5{
+margin:0 40 30 0;
+padding:0;
+font-size:30px;
+color:white;
+text-align:right;
+}
+</style>
+<body>
+<div class="container-1">
+<div class="pic">
+
+</div>
+<div class="box-1">
+<p class="heading">Campus Tour</p>
+
+<p class="para">Apaji institute is the largest faculty of Computer Science and related disciplines in Rajasthan.<br> Also known as ICICI centre for Advanced studies in Computer Science, it offers programmes in the Mathematics, Electronics, Statistics, Physics and Bioinformatics to around three thousand students. <br>
+The finest of faculty members, excellent infrastructure, very good industrial linkage and cutting edge research makes it a heaven for technical education. Eminent faculty and committed staff are value addition to the progressive performance graph of the institute. Besides teaching and learning, Faculty is actively involved in research and developments activities. Establishment of Centre for Mathematical Sciences by DST, Govt of India is an indicator of the research potential of the institute. Excellent campus placements in major companies every year and collaboration with industry giants are the salient features of the institute.
+<p class="para"><strong>Campus Life:</strong><br><a href="CampusLife.html">(Know More)</a></p>
+</div>
+</div>
+
+
+<div class="container-2">
+<div class="area_content">
+<div class="head1">
+<p class="heading1">Area <br>Of<br>Bansathali </p>
+</div>
+<div class="area">
+<p><h1><font size="8"><u>850 acres</u></font></h1>
+<br>
+<font size="5">
+The Banasthali Vidyapith premises cover an area of 850 acres. It lies in the magnificent palace, fort, site state of Rajasthan. Banasthali Vidyapith divides the campus into several blocks or parts. It has 29 accommodation blocks having the capacity to hold 438 students.
+<a href="areaofbanasthali.html">To read more</a></font></i></p>
+</div>
+</div>
+   <div class="area_pic">
+     <img src="Banasthali_Map.jpg" >
+</div>
+</div>
+
+
+<div class="container-3">
+<div class="text">
+<p class="heading3" align="left"><u>Radio Banasthali</u></p>
+<p class="para2">The Radio Banasthali covers more than 50 villages with in the range of 8.5 Km radial distance.</p>
+
+</div>
+<div class="girl"></div>
+<div class="coverage"></div>
+</div>
+
+
+<div class="container-4">
+<p class="heading"><u>About Hostel:</u></p>
+
+<p class="para"  align="right" ><a href="photogallary.html">(See Pics)</a>
+<br>Banasthali University is a residential institution. A student admitted to the University will compulsorily have to join a hostel unless the student is ward of a worker of  the University and stays with him/her in the campus or the student belongs to a neighbouring village community within a radius of 2.5 Km. There are 31 student hostels in campus of the University. There is different number of rooms in each hostel ranging from 80 to 120. All rooms are well furnished with basic amenities provided. Each hostel has a separate Mess, Newspaper and Telephone facility
+
+The addition of the two hostels Shri Shanta Aziram and Shri Shanta Niveshnam is a history as Banasthali University became the only University in Rajasthan and only the second in India to provide Personal Computers (PC) in every room of the hostel with Internet connectivity to the PG students, residents of the hostels. <br>The complete list of hostels is as under:
+</p><br>
+<div class="table1">
+<table cellpadding="10px" cellspacing="20px">
+<tr><th>S.No.</th><th>Hostel Name</th><th>S.No.</th><th>Hostel Name</th><th>S.No.</th><th>Hostel Name</th></tr>
+<tr><td>1</td><td>Shri Shanta Bai Shiksha Kutir</td>
+<td>2</td><td>Shri Shanta Soudh</td>
+<td>3</td><td>Shri Shanta Vishwa Needam</td></tr>
+<tr><td>4</td><td>Shri Shanta Nilaya</td>
+<td>5</td><td>Shri Shanta Bhuwnam</td>
+<td>6</td><td>Shri Shanta Niwas</td></tr>
+<tr><td>7</td><td>Shri Shanta Niketan</td>
+<td>8</td><td>Shri Shanta Ayatan</td>
+<td>9</td><td>Shri Shanta Vihar</td></tr>
+<tr><td>10</td><td>Shri Shanta Dham</td>
+<td>11</td><td>Shri Shanta Nikunj</td>
+<td>12</td><td>Shri Shanta Puram</td></tr>
+<tr><td>13</td><td>Shri Shanta Paleyam</td>
+<td>14</td><td>Shri Shanta Alaya</td>
+<td>15</td><td>Shri Shanta Geham</td></tr>
+<tr><td>16</td><td>Shri Shanta Niveshanam</td>
+<td>17</td><td>Shri Shanta Ajiram</td>
+<td>18</td><td>Shri Shanta Gangotri</td></tr>
+<tr><td>19</td><td>Shri Shanta Vasam</td>
+<td>20</td><td>Shri Shanta Ayanam</td>
+<td>21</td><td>Shri Shanta Pattnam</td></tr>
+<tr><td>22</td><td>Shri Shanta Lok</td>
+<td>23</td><td>Shri Shanta Nagram</td>
+<td>24</td><td>Shri Shanta Kulam</td></tr>
+<tr><td>25</td><td>Shri Shanta Neri</td>
+<td>26</td><td>Shri Shanta Gram</td>
+<td>27</td><td>Shri Shanta Puri</td></tr>
+<tr><td>28</td><td>Shri Shanta Peetham</td>
+<td>29</td><td>Shri Shanta Nigam</td>
+<td>30</td><td>Shri Shanta Vatika</td></tr>
+<tr><td>31</td><td>Shri Shanta Aagar</td></tr></font>
+</table></div>
+</div>
+
+
+<div class="container-5">
+<div class="end1">
+<p class="heading5">Tips for having a Great College Campus Visit:</p>
+<p class="para"><a href="https://www.usnews.com/education/best-colleges/slideshows/10-tips-for-an-effective-college-visit">Click Here</a></p>
+</div>
+<div class="end2">
+<p class="heading5">Great Questions to Ask on a College Tour:</p>
+<p class="para"><a href="https://www.bucknell.edu/admissions-aid/admissions-blog/80-questions-ask-college-campus-tour">Click Here</a></p>
+</div>
+
+</div>
+
+
+</body>
+</html>

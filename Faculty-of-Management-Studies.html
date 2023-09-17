@@ -1,0 +1,267 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Management-Studies</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Management-Studies.css">
+		<link rel="stylesheet" href="Image-Slider.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			text-decoration: underline;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 20px;
+			color: dark blue;
+			text-align: left;
+		}
+		h3{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 20px;
+			color: dark blue;
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Management-Studies.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Management-Studies.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Management-Studies.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Management-Studies.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Management Studies</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1M.png" style="width:100%">
+  <div class="text">Images are real as well as for representation</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2M.png" style="width:100%">
+  <div class="text">Images are real as well as for representation</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3M.png" style="width:100%">
+  <div class="text">Images are real as well as for representation</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h1><p><center>The Vision & Mission</center></p></h1>
+			<h3><p>Vision of Faculty of Management Studies (FMS-WISDOM) at Banasthali Vidyapith is to prepare women for enlightened leadership roles in all walks of life. Institute's mission is to contribute towards development of women leadership that would play active role in society-building, entrepreneurship and management of organizations and institutions in consonance with nation's spiritual and cultural heritage and its own context.<br><br>
+
+			The following represents the five foundational principles or the Panchsiddhanta of WISDOM:<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;1.  WISDOM acts as strategic think-ahead forum for women's issues in management of society, organizations and individuals<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;2.  WISDOM facilitates creation of future enlightened leadership among women<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;3.  WISDOM trains the young minds for managerial responsibilities and entrepreneurial ventures<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;4.  WISDOM conducts action-based research<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;5.  WISDOM promotes intellectual self-reliance<br><br>
+			In consonance with its foundational principles, the following are the broad objectives of the institute:<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;1.   To train women for managerial positions.<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;2.   To train women in entrepreneurial tasks of setting up industry, organizations and institutions<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;3.   To undertake research and consultancy with a view to augment knowledge base keeping in view the specific requirements of women's issue and cultural moorings.           
+			</p></h3>
+		</div>
+		
+		<div class="transbox2" style="margin-top: 20px;">
+			<h1><p><center>WISDOM's Paradigm of Management Education</center></p></h1>
+			<h3><p>WISDOM's management education paradigm is rooted in the following key themes:<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;1.      A synthesis of the spiritual values and the scientific achievements of the East and the West.<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;2.      Management as a combination of the rational-analytic and intuitive-holistic approaches based on the following equation: <br>   
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W = R + I   (Wisdom = Reason + Intuition )<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;3.      Panchmukhi Vikas i.e., holistic development of an individual through a balance of five aspects viz. physical, practical, aesthetic, moral and intellectual.<br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;4.      A blending of tradition and modernity rooted in Indian ethos.<br><br>
+
+			All programmes offered by the institute are designed around this new paradigm of education.            
+			</p></h3>
+		</div>
+		
+		<div class="transbox3" style="margin-top: 20px;">
+			<h1><p><center>Innovative Programmes</center></p></h1>
+			
+			<h2><p style="margin-bottom: -45px">Atal Incubation Centre (AIC)</p></h2><br>
+			<h3><p>Banasthali Vidyapith, ‘the world's largest residential university for women's education' has partnered with NITI Aayog for setting up world class Atal Incubation Centre (AIC) at Banasthali. It is one of its kind Business Incubator in India solely focusing on women startups. The AIC serves as a platform for nurturing innovative ideas, promoting entrepreneurship, supporting innovators, mentoring youth in general and women in particular.<br><br>
+
+			The Incubator is also supported by Ministry of MSME, Department of Science & Technology (GoI), DPIIT and Ministry of Electronics & IT (MeitY) through which it offers Seed Funding opportunities to its startups.<br><br>
+
+			AIC envisions fostering an entrepreneur-friendly culture around academics & research through its state-of-the-art Incubation Center and a customized ‘Hybrid' Incubation Program especially designed keeping in mind challenges of women entrepreneurs. The AIC with the vision to build "National Centre for Women Entrepreneurship" offers world class infrastructure, modern equipment & operating facilities, highly customized solutions, sectoral experts, huge industry network, funding opportunities and a safe ecosystem for women startups.<br><br>
+
+			The incubator is well collaborated with various Government Agencies, Corporate, National & International partners for offering wide platforms for startups to leverage the network. The AIC brings academicians, researchers, budding entrepreneurs, startups, mentors, and investors at one place with variety of extensive world-class labs in the area of Mechatronics, Artificial Intelligence, 3D Printers, MATLAB, Life Sciences, Electronics, Bio-Technology, in-house Krishi Vigyan Kendra (KVK), Physical Sciences, Computer Science, Pharmacy and Design.<br><br>
+
+			AIC Banasthali has created a conducive environment for women startups of all stages and across sectors filling them with confidence and providing them the vision to scale their ventures. More details about the various activities of AIC can be accessed at: <a href="www.aicbanasthali.org" target="_blank">www.aicbanasthali.org</a></p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Entrepreneurship Development Cell (E-Cell)</p></h2>
+			<h3><p>Human Brain- a treasure box of IDEAS, always dreams BIG!<br><br>
+
+					Taking a revolutionary step in promoting the spirit of Entrepreneurship at the highest level, Vidyapith has established E-cell. The cell is run & managed by students and takes initiatives in promoting Entrepreneurship in Women, orienting them and motivating them to see Entrepreneurship as a career option.<br><br>
+
+					Over the past years, the cell has created a lot of excitement in students starting from school education to higher education, Banasthali's Alumnae and the women of nearby villages. The Entrepreneurship Cell has oriented over 13000 women over the years. The aspiring entrepreneurs are routinely exposed to inbound and outbound activities such as Impact Talks, where women entrepreneurs who have created impact through their work visit the campus for sharing their experiences, various workshops, competitions and socially immersive activities have been conducted to give right orientation on Entrepreneurship to women. The Cell looks forward to creating an ecosystem to nurture innovation and entrepreneurship and also to create livelihood opportunities for rural women through entrepreneurship. More details at: <a href="https://www.aicbanasthali.org/e-cell/about-e-cell/" target="_blank">https://www.aicbanasthali.org/e-cell/about-e-cell/</a></p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Grass Root Action and Management (GRAM)</p></h2>
+			<h3><p>In general, Management Programmes don't provide opportunity to their students of GRAM (Grassroot Action and Management). However, the holistic development of an individual, as well as for broadening one's vision, understanding of the grass root issues and an exposure to the grass root problems is a prerequisite.<br><br>
+
+			GRAM exposure to students becomes essential because Management students, in their corporate jobs, entrepreneurial tasks and leadership roles, have to deal with field realities. In addition, Indian villages are reservoirs of native creativity. This creativity can be tapped for new ideas that can be useful for entrepreneurship as well as corporate management e.g., rural marketing. Native creativity is also useful for generating ideas for advertising. GRAM Programme also gives an opportunity to document and understand the uniqueness of the Indigenous Knowledge Systems that contain rich ideas not only for local solutions but also for universal applications.<br><br>      
+
+			The GRAM Programme also exposes student to the working of the grass-root development institutions. Thus, it provides them an understanding of the creation and development of the institutions of the grass root levels. The exposure thus gained is useful in a better grasp of the management concepts such as inter-personal relationships, group dynamics, team work etc. Gram programme also enhances the understanding of grass-root issues involved in "Development Oriented Management".<br><br>           
+
+			Gandhi ji undertook a sojourn of the countryside, even-though this was not necessary for him. However, through his sojourn he understood the latent spirituality and creativity of the masses, in spite of economic poverty. He was wonderstruck and used his insights to draw a strategy for the freedom movement. Indian freedom movement now is a unique strategic management case study that has no parallel in human history.<br><br>         
+
+			For a twenty-first century manager and entrepreneur, a similar brief sojourn is necessary to get a holistic understanding of the relevance of management at different levels. Grass-root Action and Management programme provides this orientation.</p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Corporate Exposure and Training (CET)   </p></h2>
+			<h3><p>At FMS-WISDOM, the classroom training provides the necessary conceptual background to the students. In order to bridge the theory - practice gap, it is important that students get exposed to day-to-day corporate realities. The objective of the module in Corporate Exposure and Training is to expose students not merely to corporate corridors but to the corporate action and work culture.<br><br>
+
+			FMS-WISDOM's Corporate Exposure and Training module has been designed around the FMS-WISDOM framework; ‘Knowledge-Action-Reflection-Wisdom'. This framework is applicable not only in social contexts but also in corporate contexts. This module provides an opportunity to students to learn from practical working conditions and interact with experienced managers and thereby gain knowledge and wisdom about innovative ways of problem handling and problem-solving.<br><br>   
+
+			Following two methodologies are used at FMS-WISDOM to provide Corporate Exposure and Training to students:<br><br>
+
+			 
+			1. Senior executives from reputed organizations are frequently invited to interact with the students so as to provide them an opportunity to discuss critical, strategic and operational issues that corporate managers face in managing corporate actions.<br><br>    
+			2. Students individually or in small groups undertake problem specific assignments that are of interest to organizations. Students prepare a report and make a presentation to the concerned organization and to the Institute.</p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Specialized Project Work (SPW) </p></h2>
+			<h3><p>Objective of the SPW is to provide an opportunity to students to undertake an in-depth study of a real life problem in the field of their specialization. This project work helps the students to undertake a diagnostic analysis of a problem situation and arrive at indicative solutions. The SPW facilitates institute-industry interaction and is useful to corporate organizations because many times indicative and creative solutions emerge to the benefit of the organization.<br><br>
+			SPW is evaluated not only by the respective organization but also by the Institute.</p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Short Term Executive Programmes (STEPS) </p></h2>
+			<h3><p>The Institute also offers a short-term executive programme for women executives, women entrepreneurs and women leaders. These have been designed after making a need assessment for the training requirements. These programmes are also designed and offered on "reach-out" basis. Institute has been conducting workshops on various management themes for the benefit of participating organizations.</p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Banasthali Vidyapith's TIDE Centre (B-TIDE)</p></h2>
+			<h3><p>Banasthali Vidyapith aims at developing students' personality through its five-fold education system (Panchmukhi Vikas) and prepares women to take up leadership roles in all walks of life. In this perspective, University has a functional ‘Entrepreneurship Development Cell (EDC)' that encourages entrepreneurship and self-reliance among women by training, research, workshops, competitions, event management, etc. In order to move to next level, University has embarked upon setting up incubation cell and during 2011, MCIT (GoI) was kind to sanction a project under TIDE Scheme to nurture technology-based start-up companies promoted by entrepreneurs desirous of R&D partnership in areas of Electronics and ICT with the institute or a company, with the objective of commercializing a novel technological idea, and setting up a technology business enterprise. </p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Centre for Financial Planning, Training & Research for Women at Banasthali - A Centre of Excellence.</p></h2>
+			<h3><p>Bank of America Centre of Excellence for Financial Planning Training and Research for Women at Banasthali Vidyapith is the first of its kind of effort by any University in India to spread financial planning awareness & practice among women at village, school/college levels and conducting research at both basic and advanced level.<br><br>
+
+			B.A. Continuum India Pvt Ltd (A wholly owned subsidiary of Bank of America) is the key supporter of this project and has donated a generous grant under CSR. The CFPTRW has also received support from Icetrail Logistics and Banasthali alumnae for boosting financial literacy and research.<br><br>
+
+			CFPTRW is working towards boosting financial literacy among women including rural women, working women and girl students and adopted an integrated approach while linking research to these three target groups. The centre provides financial literacy, digital financial literacy to working women, students and rural women covering more than 11000 women over the years. More details at: <a href="https://www.linkedin.com/groups/8321618/" target="_blank">https://www.linkedin.com/groups/8321618/</a></p></h3>
+			
+			<h2><p style="margin-bottom: -45px">Promotion of Research in Indian Management & Ethos (PRIME)</p></h2>
+			<h3><p>Promotion of Research in Indian Management and Ethos (PRIME) at Faculty of Management Studies - WISDOM, Banasthali Vidyapith is dedicated to Shastriya Prabandhan.<br><br>
+
+			Shastriya Prabandhan is concept for reforming Management Education in Bharat by making it suitable to the culture and context.<br><br>
+
+			The concept has been derived from the Gurukul system of education. Shastriya Prabandhan aims to infuse emotions, passion, spirituality, cultural sensitivity, reverence for nature, and contextual intelligence in the education system and especially the management education.<br><br>
+
+			For this Faculty Development Programs, Workshops, Orientation sessions, Guest lecture and Research and Consultancy are conducted. More details at: https://omrise.org/<br><br>
+
+			Under this project various initiatives are being taken up for reforming management education.<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Research<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Courses<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Faculty Development Program (FDP)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Management Development Program (MDP)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Shastrarth <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Minor Projects<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. Conferences, Workshops, and Quiz</p></h3>
+			
+			<h2><p style="margin-bottom: -45px">S.B.I. School of Commerce and Banking (SBI-SCB) at Banasthali Vidyapith</p></h2>
+			<h3><p>State Bank of India, the biggest bank of India with strong financial muscle and a network of 15,000 branches, has generously donated a grant to partially fund the School of Commerce and Banking at Banasthali Vidyapith, the premier university for women in India. The bank had gladfully communicated in writing to the Vice-Chancellor of Banasthali Vidyapith that under their Corporate Social Responsibility activity, the bank would donate a generous philanthropic grant for construction of the school to be named as ‘SBI School of Commerce and Banking'. With this feather in the cap, Vidyapith has become the first university in India to get grant for Commerce & Banking School from the largest bank of India.<br><br>
+
+			It was on January10, 2012 that SBI accepted the request of Banasthali Vidyapith and commenced a branch within the University campus. Pursuant to the discussion with the then G.M. (North) Shri Siddartha Sengupta and Dy. GM (Rajasthan) Shri Mahesh Sharma during the inauguration ceremony of the branch, University submitted a proposal to the bank mentioning the glorious history, present activities, strong impact of management education of WISDOM, future ambitions of Vidyapith in the area of commerce & banking and details about proposal for SBI-SCB. The bank welcomed the proposal and a team from SBI comprising Smt. Arundhati Bhattacharya, (the then Dy. M.D. and Corporate Development Officer of SBI), Smt. Padmaja Nair (GM, Corporate Communication), Shri R.G. Subramanian (GM, North), Shri Mahesh Sharma (Dy. G.M., Rajasthan) visited the Vidyapith campus. Smt. Bhattacharya took a sojourn to various departments and facilities of the Vidyapith and appreciated the missionary work of women's education carried by Banasthali since 1935 and advised the management students to work hard, leverage the facilities at Banasthali and make stride in the wonderful world of banking.<br><br>
+
+			The SBI-SCB offers Diploma, Undergraduate, Postgraduate, and Doctoral programmes in areas of commerce, banking and financial planning to prepare a unique breed of professionals who can excel in business & academics and prepare themselves for exciting careers in financial services. The SBI-SCB has the strong support from WISDOM, the B-school of Banasthali Vidyapith in designing innovative programmes, arranging faculty, conducting research and more importantly preparing the students in acquiring required skill-set to be a successful commerce & banking professional.</p></h3>
+		</div>
+	</body>
+	
+</html>

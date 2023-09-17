@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-style: normal;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+::-webkit-scrollbar  {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+div.bkg{
+	
+}
+
+body{
+	font-family: Baskerville Old Face;
+	background-image: url('https://rayyaninstitute.com/wp-content/uploads/2017/01/books-chalkboard-e1484688542970-1024x571.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+div.transbox1 {
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.95;
+}
+
+div.transbox1 p {
+	margin: 5% 5%;
+}
+
+nav{
+	background: #20233F;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top:0;
+}
+
+.logo img{
+	margin-left: 20px;
+	float: left;
+	vertical-align:middle;
+	position: fixed;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
+	
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+	vertical-align:middle;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 15px;
+	margin: 0 5px;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+@media (max-width: 952px){
+	label.logo {
+		height: 25px;
+		margin-top: 1px;
+		margin-left: -95px;
+		padding-left: 50px;
+		position: fixed;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+	}
+	label.logo2{
+		height: 30px;
+	}
+}
+
+@media (max-width: 858px){
+	
+	ul{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 89px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	section{
+		height: cal(100vh - 80px);
+	}
+}

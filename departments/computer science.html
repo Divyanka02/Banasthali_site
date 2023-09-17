@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr"
+	lang="en">
+<head>
+<title>Computer science</title>
+<center><h1 style="background-color:teal; color:white">COMPUTER SCIENCE</h1>
+ 
+      </head>
+	  <style>
+img {
+border: 5px solid #555;}
+</style>	
+   <body>
+	 <p><table>
+				<tr>
+				
+					<th style="border:5PX SOLID #555;text-align:justify;margin-left:20px;padding: 10;font-size: 20px;background-color:peach; color: black">
+	          Computer Science is the core of Faculty of Mathematics and Computing.<p>
+			The department operates from the building &quot;<em>ICICI Centre for Advanced Studies in Computer Science</em>&quot;<p>
+			This building has been constructed from the generous financial assistance from ICICI.<p>The Building has fully equipped lecture theaters,
+			seminar rooms, office space for faculty, laboratories and departmental library.<p> The laboratory is equipped with state of art IT 
+			infrastructure such as Silicon Graphics server and workstations, for students and researchers. <p>
+			These are in addition to fairly large number of stand-alone PCs for regular development work.<p>
+			The institute acts as a backbone to provide campuswide LAN and internet connectivity to the campus.<p>
+			The recent addition of Artech - Dalmia I.T. center with smart classrooms and high end computing facilities (hardware as well as software) 
+			has<br> further augmented the activities of the department.<p>The department offers undergraduate and postgraduate programmes <br>in Computer Science, 
+			Computer Applications and Information Technology including M.Tech. at Banasthali Vidyapith, Campus. </h4>
+			
+			<br>
+					</th>
+					<th>
+
+		
+	 <div class="content">
+         <div class="images">
+             <img src="arch.1.jpg"style=" height: 700px;width: 650px;">
+            <img src="arch.5.jpg" style="height: 700px;width: 650px;">
+			<img src="arch.9.jpg"style="height: 700px;width: 650px;">
+			<img src="arch.3.jpg"style="height: 700px;width: 650px;">
+			
+     
+      </div>
+	  </div>
+      <script>
+         var indexValue = 0;
+         function slideShow(){
+           setTimeout(slideShow, 2000);
+           var x;
+           const img = document.querySelectorAll("img");
+           for(x = 0; x < img.length; x++){
+             img[x].style.display = "none";
+           }
+           indexValue++;
+           if(indexValue > img.length){indexValue = 1}
+           img[indexValue -1].style.display = "block";
+         }
+         slideShow();
+      </script>
+	
+          </tr>
+			</table></p>
+</body>
+</html>
+
+
+

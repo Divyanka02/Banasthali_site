@@ -1,0 +1,229 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Chatbot</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+		<style type="text/css">
+			.collapsible {
+			  background-color: #777;
+			  color: white;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			  background-color: #555;
+			  text-align: justify;
+			}
+
+			.content {
+			  padding: 0 18px;
+			  display: none;
+			  
+			  margin-right: -15px;
+			  overflow: hidden;
+			  background-color: #222;
+			}
+			::-webkit-scrollbar {
+				width: 0;
+			}
+			
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			<!--body {
+				width: 100vw;
+				height: 100vh;
+				display: grid;
+				justify-content: right;
+				overflow: hidden;
+				scroll-behavior: smooth;
+			}-->
+			
+			body {
+				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94tN9nrO9uH1akDbCJn8sa-fWdZ3bTuXBGw&usqp=CAU");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			
+			#main {
+				width: 100vw;
+				max-width: 500px;
+				height: 92vh;
+				margin-left: -15px;
+				box-shadow: inset 0 0 10px 4px #1116;
+				background-color: #222; 
+			}
+			
+			h2 {
+				text-align: left;
+				font-family: sans-serif;
+				background: #20233F;
+				<!--background: #1c1c46;-->
+				color: #fff;
+				padding: 8px;
+				text-shadow: 1px 1px 4px #111;
+				margin-bottom: 8px;
+			}
+			
+			#msg_area {
+				height: 80%;
+				padding: 0 12px;
+				overflow-y: scroll;
+				scroll-behavior: smooth;
+			}
+			
+			#bot {
+				background: #20233F;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				margin: 10px;
+				<!--https://upload.wikimedia.org/wikipedia/en/e/e9/Banasthali_Vidyapeeth_Logo.png-->
+				
+			}
+			
+			#robot {
+				background: #20233F;
+				display: flex;
+				align-items: center;
+			}
+			
+			h3{
+				font-family: monospace;
+				font-size: 20px;
+			}
+		
+			#input {
+				height: 7%;
+				min-height: 42px;
+				display: grid;
+				grid-template-columns: 70% 30%;
+				margin: 8px 16px;
+				border-radius: 32px;
+				background: linear-gradient(#ececee 50%, #1c1cf46 50%);
+				
+			}
+			
+			#text {
+				outline: none;
+				font-size: 20px;
+				background: #ececee;
+				color: #333;
+				border-radius: 32px 32px 32px 32px;
+				padding: 0 16px;
+				border:solid 1px #777;
+				
+			}
+			
+			#send {
+				outline: none;
+				border:none;
+				border-radius: 32px;
+				transition-duration: 0.2s;
+				
+			}
+			
+			#send:active {
+				font-size: 16px;
+				cursor: pointer;
+			}
+			
+			.w-50 {
+			display: table;
+			background-color: #fff;
+			color: #20233F;
+			font-weight: bold;
+		}
+		::-webkit-scrollbar {
+				width: 0;
+				scroll: smooth;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+	
+	<button type="button" class="collapsible" height="20px" width="30px"><b>Open / Close Chatbot</b></button>
+	<div class="content">
+		<div id="main">
+			<div id="robot">
+					<div id="bot"><img src="716-7160081_banasthali-vidyapith-logo-hd-png-download (1).png" height="50px" width="50px" style="border-radius: 50%"></div>
+					<h3 style="color: white; text-decoration: bold"><b>Banasthali Chatbot</b></h3>
+				</div>
+			<!--<h2 style="color:white">Chatbot <button type="button" class="btn cancel" onclick="closeForm()" style="float: right"><i class="fa fa-window-close" style="font-size:25px;color:red"></i></button></h2>-->
+			
+			<!--<div id="msg_area">
+				
+			</div>
+				<div id="input">
+					<input type="text" placeholder="Type new message" id="text">
+					<button id="send" style="background-color:#20233F;color:white; cursor:pointer; font-size: 18px" onclick="myFunction()"><b>Send </b><i id="chat-icon" class='fa fa-arrow-circle-right' style='font-size:30px;color:white'></i></button>
+				</div>-->
+				
+			<div id="chatContainer" class="container border overflow-auto" style="background-color: #222;color: #fff;height: 580px">
+			
+			</div>
+			
+			<div class="input-group">
+			<input id="textbox" type="text" class="form-control" placeholder="Type your message" autofocus />
+			<div class="input-group-append">
+				<button id="sendBtn" type="button" class="btn btn-primary" style="background-color:#20233F;color:white; cursor:pointer; font-size: 18px">Send</button>
+			</div>
+			
+		</div>
+				
+		</div>
+	</div>
+	<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
+
+<script src="chatbot.js"></script>
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+	
+    var content = this.nextElementSibling;
+	
+    if (content.style.display === "block") {
+      content.style.display = "none";
+	  
+
+
+    } else {
+      content.style.display = "block";
+	  
+	  var cell = document.getElementsByTagName('br');
+var length = cell.length;
+for(var i = 0; i < length; i++) {
+    cell[0].parentNode.removeChild(cell[0]);
+	
+}
+    }
+  });
+}
+/*
+function myFunction() {
+  document.getElementById("text").innerHTML = alert("I am an alert box!");
+}*/
+</script>
+	</body>
+</html>

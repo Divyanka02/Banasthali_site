@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html dir="ltr"
+	lang="en">
+<head>
+<center><title>Computer science </center></title>
+
+</head>
+<body>
+
+
+	<table width="969" border="0" cellspacing="0" cellpadding="0">
+		<tr> <a name="top"></a> 
+		<td width="19" class="shadowLft" >&nbsp;</td>
+		<td width="931">
+			<table width="931" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+			       <td width="100%">
+			       <table cellspacing="0" cellpadding="0" border="0" c>
+			       	<tr>
+			       <!-- Sub Menu for Mathmatics and Computing:B -->
+		             
+					
+		             <td colspan="3">
+
+<style>
+ .redcolor{
+ height:16px; 
+ background-color:#cc0001;
+}
+.txt{
+     text-align:right;
+     padding-right:20px;
+     color:#ffffff
+}
+.top-right-link{
+     font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	font-weight:bold;
+	color:#ffffff;
+	padding-left:3px;
+	padding-right:5px;
+	text-decoration:none;
+ }
+.top-right-link_avsNoLink{
+      font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	font-weight:bold;
+	color:#ffffff;
+	padding-left:3px;
+	padding-right:5px;
+	text-decoration:none;
+ 
+  }
+
+</style>
+</head>
+<body>
+<!--used htmal codes-->
+<table width="931" border="0" cellspacing="0" cellpadding="0"> 
+        <tr>
+              <td width="304" rowspan="2" align="left"><img src="/banasthali/images/computer_scie_leftnce.gif" width="304" height="182" /></td>
+         
+          <td width="627" height="16" bgcolor="#cc0000">
+		<div class="amactTopLinks">
+     
+     <a href="/banasthali/wcms/en/home/downloads/index.html/index.html" class="top-right-link">DOWNLOADS</a>
+     <img src="C:\Users\ravi kumar\Pictures\right_spcr.gif" />
+     <a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/photogallery/index.html" class="top-right-link">PHOTOGALLERY</a>
+     <img src="C:\Users\ravi kumar\Pictures\right_spcr.gif" />
+     <a href="/banasthali/wcms/en/home/faqs/index.html" class="top-right-link">FAQs</a>
+     <img src="/banasthali/images/right_spcr.gif" />
+     <a href="/banasthali/wcms/en/home/feedback/index.html" class="top-right-link">FEEDBACK</a>
+     <img src="/banasthali/images/right_spcr.gif" />
+     <a href="/banasthali/wcms/en/home/location/index.html" class="top-right-link">LOCATION</a>
+     <img src="/banasthali/images/right_spcr.gif" />
+     <a href="/banasthali/wcms/en/home/sitemap/index.html" class="top-right-link">SITE-MAP</a>
+	</div>
+		</td>
+          </tr>
+		 
+        <tr>
+          <td valign="top"><table width="627" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="/banasthali/images/aimActmainupBg.gif" height="113" valign="top"><table width="627" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="/banasthali/wcms/en/home/index.html"><img src="/banasthali/images/aimActLogo.gif" class="imgPad" border="0"/></a></td>
+                </tr>
+                <tr>
+              <td><img src="C:\Users\ravi kumar\Pictures\Mathematics&Statistics+-TEXT.gif" border="0" style="padding-left:60px;padding-top:5px;"/></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+            
+			
+         	<td background="/banasthali/images/aimActmaindwdBg.gif" height="53" align="right">
+         	
+				
+         	</td>
+            </tr>
+          </table></td>
+          </tr>
+<tr>
+	        <td colspan="3" style="border-bottom:solid 1px #cccccc;">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<form name="webSearchForm" method="get" action="/banasthali/web/search.do">
+						<td id="brdCrmsAimact" align="left">
+							<ul>
+	<li>Home</li>
+	<li>lower-menu</li>
+	<li><a href="/banasthali/wcms/en/home/lower-menu/faculties/index.html">Faculties</a></li>
+	<li><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/index.html">Mathematics and Computing</a></li>
+	<li>Computer Science</li>
+</ul>
+						</td>
+						<td align="right" class="inputBoxDiv" >
+							    Search &nbsp;&nbsp;<input name="searchCriteria.q" type="text" class="inputClass" />
+						</td>
+						<td class="padding-left-5px" style="padding-right: 5px;" align="left">	
+							<input type="image" name="" src="/banasthali/images//*go_but.gif" class="go_but" alt="Go" />
+						</td>
+						</form>
+					</tr>
+				</table>
+			</td>
+</tr>
+
+</table>
+
+
+</td>
+		                  
+		 <!-- home pages photogallry  and download condition-->
+		                 
+		                </tr>
+		            </table>
+		           </td>    
+				</tr>
+				<tr>
+					<td>
+					<table cellspacing="0" cellpadding="0">
+					<tr>
+					<td style="padding-top:10px; padding-bottom:10px;border-right:solid 1px #cccccc; width:232px; " valign="top" align="left">
+						<div class="mainLeft" >
+
+						<!-- Sub Menu for Bio Info:B -->
+
+	   
+
+           	<div class="aimActLeftnav">
+
+				<ul>
+
+<li class="avs_node avs_selected"><span>Computer Science</span></li>
+<li class="avs_node"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/maths/index.html">Mathematics & Statistics</a></li>
+</ul>
+
+	   		 </div> 
+
+       
+
+       
+
+      
+
+	
+
+           <div class="aimActLeftDwdDiv">
+
+              	<div class="aimActLeftdwd">
+
+					<ul>
+
+<li class="avs_leaf"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/about_us/index.html">About The Department</a></li>
+<li class="avs_leaf"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/academic_programs/index.html">Courses & Schemes</a></li>
+<li class="avs_leaf"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/faculty_staff/index.html">Faculty & Staff</a></li>
+<li class="avs_leaf"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/industry_association/index.html">Infrastructure & Resources</a></li>
+<li class="avs_leaf"><a href="/banasthali/wcms/en/home/lower-menu/faculties/maths-app-comp-tech/computer_science/contact_us/index.html">Contact Us</a></li>
+</ul>
+
+				</div>
+
+	   	   </div> 
+
+        
+
+	  <!-- Sub Menu for Bio Info:E -->
+
+	
+
+	<!-- Sub menu for Computer Science :B -->
+
+   <!-- Sub menu for Computer Science :E -->
+
+	
+
+	<!-- Sub menu for Electronics :B -->
+    <!-- Sub menu for math :E -->
+     <!-- Sub menu for Maths :B -->
+     <!-- Sub menu for Maths :E -->
+
+	<!-- Sub menu for Physics :E -->
+
+	<!-- Sub menu for Stastics :B -->
+     <!-- Sub menu for Stastics :E -->
+
+	
+</div>
+					</td>
+					<td width="529" class="mainContent" style="background-color:white; " valign="top">
+						 
+						
+							
+							
+								<div class="midcontentwithoutrightbox"  >
+									 
+		
+			<div style="padding-top:10px; 650px;"> 
+		
+				
+			<table border="0" width="612" style="width: 612px">
+	<tbody>
+		<tr>
+			<td>
+			<div align="justify">
+			<span style="font-size: small; font-family: arial, helvetica, sans-serif">Computer Science is the core of Faculty of Mathematics and Computing. 
+			The department operates from the building &quot;<em>ICICI Centre for Advanced Studies in Computer Science</em>&quot;.
+			This building has been constructed from the generous financial assistance from ICICI.The Building has fully equipped lecture theaters,
+			seminar rooms, office space for faculty, laboratories and departmental library. The laboratory is equipped with state of art IT 
+			infrastructure such as Silicon Graphics server and workstations, for students and researchers. 
+			These are in addition to fairly large number of stand-alone PCs for regular development work.
+			The institute acts as a backbone to provide campuswide LAN and internet connectivity to the campus.<br />
+			<br />The recent addition of Artech - Dalmia I.T. center with smart classrooms and high end computing facilities (hardware as well as software) 
+			has further augmented the activities of the department.The department offers undergraduate and postgraduate programmes in Computer Science, 
+			Computer Applications and Information Technology including M.Tech. at Banasthali Vidyapith, Campus. </span>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+		</div>
+	
+								</div>	
+								<div style="width: 630px; padding-top: 10px; margin: 10px;" align="right">
+
+								</div>  
+							
+							
+						
+					</td>
+
+					
+						<td width="1">&nbsp;</td>
+					
+					
+					</tr>
+					</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td  height="34">
+						<div class="mathsFooter">
+<style>
+#newfooter_math {
+	height:31px;
+	width: 931px;
+	float:left;
+	font-size: 11px;
+	color: #ffffff;
+	font-family:Verdana, Arial, Helvetica, 
+	sans-serif;
+	background: #cc0000;	
+	padding-top:5px;
+      
+      
+     
+}
+#footerleft_math{
+	width:400px;
+	float:left;
+	font-size: 11px;
+	color: #ffffff;
+	font-family:Verdana, Arial, Helvetica, 
+	sans-serif;
+	text-align:left;
+	padding-left:10px;
+     
+}
+#footerright_math {
+	width:400px;
+	float:left;
+	font-size: 11px;
+	color: #ffffff;
+	font-family:Verdana, Arial, Helvetica, 
+       sans-serif;
+	text-align:right;
+	padding-right:10px;
+       
+}
+</style>
+<div class="mathsFooter">
+	<div id="footerleft_math">
+		Notified Under Section (3) of University Grants Commission Act. <br/>@ 2007 Banasthali Vidyapith.
+             
+       </div>
+	
+	<div id="footerright_math" align="right">
+		<div align="right" style="margin-right: 20px;"><a href="https://www.facebook.com/banasthali.org" target="_blank"><img align="top" src="C:\Users\ravi kumar\Pictures\facebook-logo.png" height=41px" width="42px"></a>&nbsp;&nbsp;&nbsp;<a href="http://banasthali.org/banasthali/wcms/en/home/lower-menu/naac-accredation/index.html;jsessionid=B4A0C0B5ABA276EBA89C831371AB573B" target="_blank"><img align="top" src="/banasthali/images/nirf-logo.jpg" height=41px" width="42px"></a></div><!--Solution provided by <a href="http://www.neevtech.com/">Neev</a> & <a href="http://www.aurigaitsolutions.com/"> Auriga IT</a>-->
+	</div>
+</div>
+
+
+<!-- footer -->
+
+</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	<td width="19" class="shadowRht">&nbsp;</td>
+	<tr>
+</table>
+
+</body>
+</html>
+
+
+

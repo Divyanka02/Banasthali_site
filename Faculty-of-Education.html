@@ -1,0 +1,199 @@
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Faculty-Of-Education</title>
+		<meta name="description" content="About-Us-University">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Akanksha Kumari">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Faculty-of-Education.css">
+		<link rel="stylesheet" href="Image-Slider-Education.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+		h2{
+			text-decoration: bold;
+			font-style: normal;
+			font-family: Georgia;
+			font-size: 23px;
+			color: dark blue;
+		}
+		div.transbox2 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox2 p {
+			margin: 5% 5%;
+		}
+		div .transbox2 img{
+			display: yes;
+			
+		}
+		div.transbox3 {
+			margin: 30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		div.transbox3 p {
+			margin: 5% 5%;
+		}
+		div .transbox3 img{
+			display: yes;
+			
+		}
+		table{
+			margin-top: -40px;
+			width: 100%;
+		}
+		table button{
+				font-size: 18px;
+				font-weight: bold;
+				margin: 20px 0;
+				padding: 10px 15px;
+				width: 50%;
+				border-radius: 5px;
+				border: 0;
+				cursor: pointer;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<nav>
+		<div>
+			<!--<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars" style="margin-left: 50px">
+			</label>-->
+			<label class="logo">
+				<p>
+					<a href="user.php" target="_blank">
+					<img src="BV-Logo (2).png" alt="Banasthali-Vidyapith-Logo" height="45" style="vertical-align:middle;margin-top:13px">
+					</a>
+					<ul style="margin-top:30px">
+						<li><a href="Faculty-of-Education.html" class="active" height="60" target="_parent"><b>Home</b></a>
+							<!--<ul>
+								<li><a href="#" height="60" target="Edu"><b>Education</b></a></li>
+								<li><a href="#" height="60" target="Edu"><b>Physical Education</b></a></li>
+							</ul>-->
+						</li>
+						<li><a href="Courses-Education.html" height="60" target="_parent"><b>Courses</b></a></li>
+						<!--<li><a href="#" height="60" target="_parent"><b>Admission</b></a></li>-->
+						<li><a href="Faculty-Education.html" height="60" target="_parent"><b>Faculty</b></a></li>
+						<!--<li><a href="D:\BCA VI SEMESTER\Project Lab\Website Project\Faculty\Faculty of Education\Research.html" height="60" target="_parent"><b>Research</b></a></li>-->
+						<li><a href="Contact Us-Education.html" height="60" target="_parent"><b>Contacts</b></a></li>
+					</ul>
+				</p>
+			</label>
+				
+		</div>
+		</nav>
+		<nav class="nav2">
+			<label class="logo2">
+				<center>
+					<li>Faculty of Education</li>
+				</center>
+			</label>
+		</nav>
+		
+		<!--Slideshow-->
+		<div class="slideshow-container" style="margin-top: 120px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="1.png" style="width:100%">
+  <div class="text">Lab images are only for representation</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="2.png" style="width:100%">
+  <div class="text">Lab images are only for representation</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="3.png" style="width:100%">
+  <div class="text">Lab images are only for representation</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+		<!--Slideshow-->
+		<div class="transbox1" style="margin-top: 20px;">
+			<h2><p>Faculty of Education aims to train human resource as educational leaders and as experienced educators with knowledge and skills. The overall aim of Faculty programme is to promote and support educational scholarship, research and practices. Its innovative programme attracts students from different states and ethnic backgrounds.<br>
+			<br>
+			The Faculty came into being in 1962, when the College of Education was established. The Faculty made a move for the creation of popular departments to cater to the new area of education. As a result the Department of Physical Education came into being in 1985.<br>
+			<br>
+			New skills and strength of thinking are synthesised into regular practices and experiences. The teaching is characterized by clarity, repertoire examples, analogies, demonstration. By deploying arsenal of techniques, the Faculty guides  students into active consideration of a vital, intellectual curiosities.          
+			</p><h2>
+		</div>
+		<div class="transbox2">
+			<center><p><h2>Department of Education</h2></p></center>
+			<p><table>
+				<tr>
+					<th><img src="EDUCATION.jpg" style="height: 420px;width: 600px;"></th>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">The Department of Education had its origin as the college of Education within the Vidyapith in 1962 and was affiliated to the University of Rajasthan. It was the first wholly residential teacher education institute for women, in the whole region. Later on, when the Vidyapith gained the status of a Deemed University in 1983, the college of education got elevated as the Department of Education. The Department of Education and Physical Education were brought together as the Faculty of Education.<br>
+					<br>
+
+					The department offers 4-Year Integrated Bachelor of Arts Bachelor of Education (B.A. B.Ed.), 4-Year Integrated Bachelor of Science Bachelor of Education (B.Sc. B.Ed.), 2-year Bachelor of Education (B.Ed.), Master of Education (M.Ed.) and Doctor of Philosophy in Education (Ph.D).<br>
+					<br>
+					At present, the department is recognized as one of the progressive teacher education institute in the country known for its quality and innovativeness. The teaching programs involve not only practicing new ideas and concepts but also acquiring skills to act on those concepts to generate personal understanding and articulate the same.<br>
+					<br>
+					The Department of Education upgraded as ‘School of Education' by the Ministry of Human Resource Development, Government of India under its Pandit Madan Mohan Malviya National Mission on Teachers and Teaching scheme in October 2018.<br>
+					<br>
+					
+					</th>
+				</tr>
+			</table></p>
+		</div>
+		<div class="transbox3">
+			<center><p><h2>Department of Physical Education</h2></p></center>
+			<p><table>
+				<tr>
+					<th style="text-align: justify;margin-left: 20px;padding: 10; font size: 30px">The Department of Physical Education  is well equipped with modern infrastructure and includes activities like Equestrian, Swimming, Flying, Riffle Shooting, Basketball, Volleyball, Badminton, TT, Cricket, Handball, Softball, Judo, Football, Netball, Athletics (track and field), Acrobatics, Martial Arts. Sports are in fact  a way of life  for the students conscious of health fitness and those looking for professional star status.  Physical education, a learning experience, offers a unique opportunity for problem - solving and self-expression and socialization. A well implemented, comprehensive programme is an essential component to the growth of both mind and body.<br>
+					<br>
+					
+					</th>
+					<th><img src="PE.jpg" style="height: 400px;width: 600px;"></th>
+				</tr>
+			</table></p>
+		</div>
+	</body>
+	
+</html>
